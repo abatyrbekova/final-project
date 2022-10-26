@@ -1,1 +1,1 @@
-console.log("Hello from FOOTER");
+console.log("Let's start our project!");
