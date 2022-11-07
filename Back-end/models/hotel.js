@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import roomSchema from "./room.js";
 
 const { Schema, model } = mongoose;
 const hotelSchema = new Schema({
