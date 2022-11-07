@@ -15,4 +15,6 @@ const roomSchema = new Schema({
     isAvailable: {type: Boolean},
 });
 
+const Room = model("room", roomSchema);
+
 export default roomSchema;
