@@ -1,7 +1,9 @@
 
     [{
         "name": "Suite1!",
-        "size": 128
+        "size": 128,
+        "description": "This is a test suite", 
+        "sleeps": 4
     }]
 
 
