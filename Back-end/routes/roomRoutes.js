@@ -1,5 +1,5 @@
 import express from 'express';
-import Room from '../models/roomModel.js';
+import Room from '../models/room.js';
 
 const router = express.Router();
 
@@ -9,9 +9,9 @@ router.get('/rooms/search',async(req, res) => {
     console.log("query items", req.query)
     //req.query is used for query parameters 
                                     //conditions 
-    const hotels = await Hotel.find({'rooms.bedSize':req.query.bedSize, 'rooms.sleeps':req.query.sleeps}).select('rooms.$') //select the rooms you found
+    const rooms = await Room.find({'rooms.bedSize':req.query.bedSize, 'rooms.sleeps':req.query.sleeps}).select('rooms.$') //select the rooms you found
 
-    return res.status(200).json(hotels);
+    return res.status(200).json(rooms);
 })
 
 //GET: show the room by ID 
@@ -19,7 +19,7 @@ router.get('/rooms/search',async(req, res) => {
 router.get('/rooms/byid/:id', async(req, res) => {
     //find the room with that id inside the array.
     //select specific items within the document
-    const room = await Hotel.find({'rooms._id':req.params.id}).select('rooms.$') //positional operator $, show only the room it found in the condition.
+    const room = await Room.find({'rooms._id':req.params.id}).select('rooms.$') //positional operator $, show only the room it found in the condition.
 
     if(!room){
         //we couldn't find a room with that id 
