@@ -3,6 +3,17 @@ import Room from '../models/room.js';
 
 const router = express.Router();
 
+//GET all rooms
+router.get('/', async (req, res) => {
+    try {
+        const rooms = await Room.find();
+        res.status(200).json(rooms);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+});
+
+
 //GET
 //http://localhost:3000/api/hotels/rooms/search?bedSize=MEDIUM&sleeps=1
 router.get('/rooms/search',async(req, res) => {
