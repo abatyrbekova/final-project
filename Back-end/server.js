@@ -2,6 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
+import roomRoutes from './routes/roomRoutes.js';
+
 
 
 dotenv.config();
@@ -20,6 +22,7 @@ mongoose
         console.log("🤨");
     });
 
+    app.use('/api/rooms', roomRoutes);
 
     
     app.listen(3001, (req, res) => {
