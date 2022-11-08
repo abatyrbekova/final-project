@@ -1,9 +1,15 @@
 
     [{
-        "name": "Suite1!",
-        "size": 128,
-        "description": "This is a test suite", 
-        "sleeps": 4
+        "hotelName": "NEA Hotel",
+        "Location": "Apls Weg 25, 67890 Heidisberg, Germany",
+        "Phone": "+49 123 456 789",
+        "Email": "nea-hotel-igloo@email.com ",
+        "Description": "Spending the night in NEA Hotel igloos is magical. In addition to the astonishing view, the glass igloos are surprisingly spacious and feature a high standard of equipment. You can fall asleep in a luxurious warm bed on a fell slope admiring the Arctic starry sky – and, if you want, you don’t have to leave the igloo at any point during your stay. An abundant breakfast buffet in our atmospheric restaurant Utsu is included in the price of the night in an igloo. ", 
+        "priceRange": "We tried to fit every budget to allow everyone to experience the magic of the Igloos.  You can choose from a variety of options, from a simple overnight stay to a full package with a variety of activities.  Please visit our web page or contact us directly for more information. Our friendly staff will be happy to help you. ",
+        "Amenities": "Breakfast buffet included, 24h reception, Restaurant, Bar, Sauna, Spa, Fitness, Parking, Free WiFi, Pets allowed, Non-smoking rooms, Family rooms, Facilities for disabled guests, Heating, Allergy-free room, Non-smoking throughout, Air conditioning, Designated smoking area, Wheelchair accessible.",
+        "rating": "*****",
+        "image": "https://www.nea-hotel.de/wp-content/uploads/2019/11/NEA-Hotel-IGLOO-1.jpg",
+        "url": "https://www.nea-hotel.de/en/igloos/"
     }]
 
 
