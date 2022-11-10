@@ -8,7 +8,7 @@ const router = express.Router();
 //http://localhost:3000/api/users/
 router.get('/', getAllUsers)
 
-//Post or Get? Login
+//Post Login
 router.post('/login', login)
 
 //POST::

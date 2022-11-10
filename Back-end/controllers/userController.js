@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import User from '../models/user.js';
-import authenticationHelper from '../helpers/authenticationHelper.js';
+import { generateToken } from '../helpers/authenticationHelper.js';
 
 
 
@@ -35,7 +35,7 @@ export const login = async(req, res) => {
             console.log('Yayyy you are authenticated, welcome!');
 
             //generate a token for the user using the authentication strategy (helper function)            
-            const token = await authenticationHelper.generateToken(user);        
+            const token = await generateToken(user);        
 
             return res.status(200).json({message:'You are authenticated, welcome!', token});
         } else {
