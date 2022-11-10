@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
  * @param {*} user 
  * @returns 
  */
-const generateToken = (user) => {
+export const generateToken = (user) => {
     const payload = {sub:user._id};
     
     return new Promise((resolve, reject) => {
@@ -21,4 +21,3 @@ const generateToken = (user) => {
     });
 }
 
-export default generateToken;
