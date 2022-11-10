@@ -1,18 +1,24 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import passport from 'passport';
 
 import roomRoutes from './routes/roomRoutes.js';
 import activityRoutes from './routes/activityRoutes.js';
 import menuRoutes from './routes/menuRoutes.js';
 import userRoutes from './routes/userRoutes.js';
-
+import configureJwtStrategy from "./passport-config.js";
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+
+//connect to the database
+app.use(passport.initialize());
+//configure passport to use the jwt strategy
+configureJwtStrategy(passport);
 
 mongoose
     .connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`)
