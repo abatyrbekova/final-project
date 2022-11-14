@@ -1,9 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
 
 import Navbar from "./Components/navbar";
 import Home from "./Pages/Home/home";
 import Stay from "./Pages/Stay/stay";
-import Gallery from "./Pages/Gallery/gallery";
+import Activities from "./Pages/Activities/activities";
 import About from "./Pages/About/about";
 import Contact from "./Pages/Contact/contact";
 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<Stay />} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
