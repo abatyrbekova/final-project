@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Breakfast buffet",
+    "description": "An abundant breakfast buffet in our atmospheric restaurant is included in the price of the night in an igloo. In an elegant setting, guests can find a great variety of local and international food of the highest quality. The opening hours are flexible to accommodate the rhythm of each guest.",
+    "time": "Welcome to our abundant breakfast buffet between 7-10.",
+    "price": "free",
+    "images": "./eat&drink/breakfast3.avif"
+  },
+  {
+    "name": "Lunch",
+    "description": "Mealtimes are about spending time together, coming together to share stories and share a passion for fabulous food. That is why our award-winning master chefs ensure that every dish served is a culinary highlight. Our Chef´s menu of the day, based on seasonal ingredients, pays homage to the clean nature and its varying seasons. Please inform us in advance if you have dietary requirements or allergies.",
+    "time": "We serve Chef´s menu of the day between 12-15.",
+    "price": "18€/person",
+    "images": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/eat&drink/eat&drink11.jpg"
+  },
+  {
+<<<<<<< HEAD
+    "name": "dinner",
+    "description": "xyzdfdgkjjkjkj",
+
+    "time": "18-20",
+    "price": "12 euro",
+
+    "images": "./eat&drink/breakfast1.avif"
+  },
+  {
+    "name": "lunch",
+    "description": "xyz",
+
+    "time": "13-14",
+    "price": "50 euro",
+
+    "images": "./eat&drink/eat&drink5.jpg"
+  },
+  {
+    "name": "dinner",
+    "description": "xyzdfdgkjjkjkj",
+
+    "time": "18-20",
+    "price": "12 euro",
+
+    "images": "./eat&drink/breakfast1.avif"
+=======
+    "name": "Dinner",
+    "description": "Our restaurant similarly to the igloos, the walls and ceiling of the second floor of the restaurant are entirely made of glass, offering an unobstructed view to the horizon. During daylight time, the magnificent landscape adds its own spice to the gourmet moment. Our stylish downstairs floor, on the other hand, delights with the blaze of log-fire and an intimate atmosphere. The flavours offered in our restaurant will not play second fiddle to the landscape. Please inform us in advance if you have dietary requirements or allergies.",
+    "time": "Seating times for our second floor are 17.30 and 20.30. On other times you will be more likely seated on our first floor next to the fireplace.",
+    "price": "26€/2 courses, 36€/3 courses",
+    "images": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/eat&drink/eat&drink2.jpg"
+>>>>>>> d439445a8f6d25595d5ca9c13701859f6144a2ed
+  }
+]

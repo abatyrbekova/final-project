@@ -2,6 +2,10 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
+import roomRoutes from './routes/roomRoutes.js';
+import activityRoutes from './routes/activityRoutes.js';
+import menuRoutes from './routes/menuRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 
 dotenv.config();
@@ -20,6 +24,10 @@ mongoose
         console.log("🤨");
     });
 
+    app.use('/api/rooms', roomRoutes);
+    app.use('/api/activities', activityRoutes);
+    app.use('/api/menu', menuRoutes);
+    app.use('/api/users', userRoutes);
 
     
     app.listen(3001, (req, res) => {
