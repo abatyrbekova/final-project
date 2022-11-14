@@ -1,11 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import passport from "passport";
 
 import roomRoutes from "./routes/roomRoutes.js";
 import activityRoutes from "./routes/activityRoutes.js";
 import menuRoutes from "./routes/menuRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import configureJwtStrategy from "./passport-config.js";
 
 // inside the backend u must create "images" folder and put inside it the all images, and then in the DB the url should be like this http://localhost:3001/img/flower.jpg
 dotenv.config();
@@ -13,6 +15,11 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
+
+//connect to the database
+app.use(passport.initialize());
+//configure passport to use the jwt strategy
+configureJwtStrategy(passport);
 
 mongoose
   .connect(
