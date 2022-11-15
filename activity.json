@@ -1,30 +1,32 @@
-[{
+[
+  {
     "name": "Sauna",
     "description": "A private sauna compartment offers luxurious relaxing moments for those staying in NEA Hotel. The sauna has a wall-mounted refrigerator for enjoying cold drinks while sauna-bathing.",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/revontulitalon_sauna.jpg"
-},
-{
+    "img": " http://localhost:3001/img/revontulitalon_sauna.jpg"
+  },
+  {
     "name": "Hot tub",
     "description": "The sauna changing room features access to the building’s private terrace and hot tub in which you can pamper yourself with a luxurious moment.",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/revontulitalon_poreamme.jpg"
-},
-{
+    "img": " http://localhost:3001/img/revontulitalon_poreamme.jpg"
+  },
+  {
     "name": "Hiking",
     "description": "Magnificent all year round, in the summer you’ll be glad of the shade, whilst in winter you’ll be lured onwards by the bewitching white wonderland. Discover deep, overgrown gorges; majestic, tumbling waterfalls and astonishing views. Hikes take you to truly enchanting, unforgettable places. It’s a hikers’ fantasy land and you’d be cuckoo to miss it.",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/activity2.jpg"
-},
-{
+    "img": " http://localhost:3001/img/activity2.jpg"
+  },
+  {
     "name": "Horse riding",
     "description": "Experience the Icelandic horse surrounded by beautiful nature in this 1 1/2 -2 hour riding tour. Perfect for both beginners as well as more experienced riders.",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/horse_riding_2.jpg"
-},
-{
+    "img": " http://localhost:3001/img/horse_riding_2.jpg"
+  },
+  {
     "name": "Skiing",
     "description": "Skiing is becoming increasingly popular in Germany. Climbing snow-covered mountains on your own strength, enjoying the clear view and icy air, and on the descent laying fresh tracks in untouched deep snow is a dream for winter sports enthusiasts.",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/activity4.jpg"
-},
-{
+    "img": " http://localhost:3001/img/skiing.jpg"
+  },
+  {
     "name": "Snowmobile Tour",
     "description": "The winter season begins at the beginning of December, when there is enough snow for various winter activities, such as snowmobiling. Take a guided sled tour through the snow to experience a treasured pastime. Choose from tours to suit all levels with options for private groups, families and dual riders. Try a trip with something extra – a meal in a rustic mountain lodge or a nighttime run in the moonlight. Kids are catered for too! Children can try their very own Mini-Z snowmobiles on a specially-designed track",
-    "image": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/activity/snowmobiling.jpg"
-}]
+    "img": " http://localhost:3001/img/snowmobiling.jpg"
+  }
+]
