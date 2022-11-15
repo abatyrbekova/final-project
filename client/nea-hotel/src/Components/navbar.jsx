@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
@@ -7,7 +8,7 @@ export default function Navbar() {
     <nav className="nav">
       <div className="navbar-logo">
         <NavLink to="/">
-        <img className="logo" src="/img/logo/Logo dark-bg.png" />
+          <img className="logo" src={process.env.PUBLIC_URL + "/img/logo/Logo dark-bg.png"} />
         </NavLink>
       </div>
       <ul className="navbar-links">
@@ -15,10 +16,10 @@ export default function Navbar() {
           <NavLink to="/stay">Stay</NavLink>
         </li>
         <li className="nav-link">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/menu">Eat & Drink</NavLink>
         </li>
         <li className="nav-link">
-          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/activities">Activities</NavLink>
         </li>
         <li className="nav-link">
           <NavLink to="/contact">Contact</NavLink>

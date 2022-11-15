@@ -15,15 +15,15 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="main-wrapper">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/stay" element={<Stay />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-      </div>
+        <Routes>
+          <Route path="/stay" element={<Stay />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+        </div>
     </div>
   );
 }
