@@ -14,38 +14,10 @@
     "images": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/eat&drink/eat&drink11.jpg"
   },
   {
-<<<<<<< HEAD
-    "name": "dinner",
-    "description": "xyzdfdgkjjkjkj",
-
-    "time": "18-20",
-    "price": "12 euro",
-
-    "images": "./eat&drink/breakfast1.avif"
-  },
-  {
-    "name": "lunch",
-    "description": "xyz",
-
-    "time": "13-14",
-    "price": "50 euro",
-
-    "images": "./eat&drink/eat&drink5.jpg"
-  },
-  {
-    "name": "dinner",
-    "description": "xyzdfdgkjjkjkj",
-
-    "time": "18-20",
-    "price": "12 euro",
-
-    "images": "./eat&drink/breakfast1.avif"
-=======
     "name": "Dinner",
     "description": "Our restaurant similarly to the igloos, the walls and ceiling of the second floor of the restaurant are entirely made of glass, offering an unobstructed view to the horizon. During daylight time, the magnificent landscape adds its own spice to the gourmet moment. Our stylish downstairs floor, on the other hand, delights with the blaze of log-fire and an intimate atmosphere. The flavours offered in our restaurant will not play second fiddle to the landscape. Please inform us in advance if you have dietary requirements or allergies.",
     "time": "Seating times for our second floor are 17.30 and 20.30. On other times you will be more likely seated on our first floor next to the fireplace.",
     "price": "26€/2 courses, 36€/3 courses",
     "images": "/home/user/app/e11/FINAL-PROJECT/client/nea-hotel/public/img/eat&drink/eat&drink2.jpg"
->>>>>>> d439445a8f6d25595d5ca9c13701859f6144a2ed
   }
 ]
