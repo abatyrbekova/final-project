@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="main-wrapper">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stay" element={<Stay />} />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      </div>
     </div>
   );
 }
