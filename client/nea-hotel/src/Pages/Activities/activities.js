@@ -75,7 +75,7 @@ export default function Activites() {
               <div className="card-img ">
                 <a>
                   {/* <img src="/img/activity/activity1.jpg" alt="img" /> */}
-                  <img src={item.img} alt="img" />
+                  <img src={item.image} alt="img" />
                 </a>
               </div>
               <div className="card-text">
