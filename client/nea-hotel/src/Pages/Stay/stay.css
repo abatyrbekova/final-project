@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container p {
+  font-size: 2vw;
+  font-weight: 600;
+  color: rgb(86, 83, 83);
+}
+.stay-img {
+  /* height: 100vh; */
+  width: 100%;
+  background-image: url(./img/landingroom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20%;
+  /*border: 1px red solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px red solid; */
+  /* padding-top: 2%; */
+  /* padding-bottom: 2%; */
+  position: relative;
+}
+.stay-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.476);
+}
+.stay-img > p {
+  color: white !important;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 2%; */
+  width: 100%;
+}
+.cards .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.cards .card:nth-child(even) .card-img {
+  justify-content: flex-start;
+}
+
+.cards .card .card-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.cards .card .card-img a {
+  width: 60%;
+  display: flex;
+}
+.cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards .card:nth-child(odd) .card-text {
+  justify-content: flex-start;
+}
+
+.cards .card .card-text {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 3%; */
+}
+.cards .card .card-text .card-text-inner {
+  width: 63%;
+  padding: 3%;
+}
+
+.cards .card .card-text.card-text-inner h2 {
+  font-size: 2vw;
+}
+.cards .card .card-text .card-text-inner p {
+  font-size: 1.5vw;
+}
+
+.btn-card {
+  padding: 3%;
+  background-color: rgb(127, 178, 220);
+  border: none;
+  outline: none;
+
+  margin-top: 10%;
+}
