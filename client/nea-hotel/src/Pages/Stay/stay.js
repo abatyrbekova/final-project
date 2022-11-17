@@ -21,7 +21,7 @@ export default function Stay() {
   let handleBook = () => {
     navigate("/booking");
   };
-
+  //test
   // fetch data from server
   useEffect(() => {
     fetchData().then((data) => setRooms(data));
