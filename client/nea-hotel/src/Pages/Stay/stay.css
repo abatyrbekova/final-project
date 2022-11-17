@@ -10,10 +10,10 @@
   font-weight: 600;
   color: rgb(86, 83, 83);
 }
-.landing-img {
+.stay-img {
   /* height: 100vh; */
   width: 100%;
-  background-image: url(./img/landing.jpg);
+  background-image: url(./img/landingroom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,12 +22,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 5px red solid; */
   /* padding-top: 2%; */
   /* padding-bottom: 2%; */
   position: relative;
 }
-/* Here we add a new layer for the landing-img */
-.landing-img::after {
+.stay-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -36,39 +36,12 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.476);
 }
-.landing-img > p {
+.stay-img > p {
   color: white !important;
   position: relative;
   z-index: 3;
   text-align: center;
 }
-
-/* .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-}
-
-.card-img {
-  width: 42%;
-}
-
-.card-text {
-  width: 40%;
-  margin-top: 5%;
-  padding: 5%;
-  text-align: left;
-}
-
-h1 .card-text {
-  margin-bottom: 5%;
-} */
 
 .cards {
   display: flex;
@@ -122,4 +95,13 @@ h1 .card-text {
 }
 .cards .card .card-text .card-text-inner p {
   font-size: 1.5vw;
+}
+
+.btn-card {
+  padding: 3%;
+  background-color: rgb(127, 178, 220);
+  border: none;
+  outline: none;
+
+  margin-top: 10%;
 }
