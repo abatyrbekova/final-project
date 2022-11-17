@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Superior Deluxe Igloo",
     "size": "58 sq.m",
     "description": "The Suite Igloo has a private terrace with outdoor jacuzzi and illuminated Northern lights in the ceiling of lounge area. Suite Igloos have the best unobstructed view of the valley and the sky. They accommodate max. 2 adults and 2 children (under 13 years old). Extra beds for children are included in the price, as well as breakfast, Moët & Chandon champagne as a welcome drink, minibar (refills at an additional cost) and portage service. For now portage service available only on request.",
@@ -7,9 +8,9 @@
     "view": "Valley View",
     "amenities": "Bathrobes and Robes, Slippers, Hairdryer, Safe, Mini Bar, Small Kitchen with  Tea & Coffee Making Facilities, Flat Screen TV, Telephone, Free WiFi, Private terrace with outdoor jacuzzi, Breakfast included, Smoke-free room",
     "price": "€ 1,075 p/night ",
-    "Picture": "https://www.royalpalmsharm.com/wp-content/uploads/2018/07/Double-Room-1.jpg"
-},
-{
+    "Picture": "http://localhost:3001/img/room5.jpg"
+  },
+  {
     "name": "Prime Superior Igloo",
     "size": "48 sq.m",
     "description": "High-standard, well-equipped glass igloos.  Some of the Prime Superior Igloos have space for extra beds (max. 2 children under 13 yo, 100 €/night). Breakfast and welcome drink are included in the price.",
@@ -18,9 +19,9 @@
     "view": "Forest View",
     "amenities": "Bathrobes and Robes, Slippers, Hairdryer, Safe, Mini Bar, Small Kitchen with Tea & Coffee Making Facilities, Flat Screen TV, Telephone, Free WiFi, Breakfast included, Smoke-free room, Private Terrace",
     "price": "€ 445 p/night ",
-    "Picture": "https://www.royalpalmsharm.com/wp-content/uploads/2018/07/Double-Room-1.jpg"
-},
-{
+    "Picture": "http://localhost:3001/img/room4.jpg"
+  },
+  {
     "name": "Superior Igloo",
     "size": "40 sq.m",
     "description": "Superior Igloos are situated on the side of the fell and offer an unobstructed view of the sky. Possibility for extra beds (for 2 children under 13 yo, 100 €/night) in all Superior igloos. Breakfast is included in the price.",
@@ -29,9 +30,9 @@
     "view": "Mountain View",
     "amenities": "Bathrobes and Robes, Slippers, Hairdryer, Safe, Mini Bar, Small Kitchen with Tea & Coffee Making Facilities, Flat Screen TV, Telephone, Free WiFi, Breakfast included, Smoke-free room, Private Terrace",
     "price": "€ 395 p/night ",
-    "Picture": "https://www.royalpalmsharm.com/wp-content/uploads/2018/07/Double-Room-1.jpg"
-},
-{
+    "Picture": "http://localhost:3001/img/room6.jpg"
+  },
+  {
     "name": "Suite Igloo",
     "size": "30 sq.m",
     "description": "Suite Igloos are situated on the side of our complex and offer an unobstructed view of the sky. Double sofa-bed for 2 children under 13 yo. is included in price.",
@@ -40,5 +41,6 @@
     "view": "Valley View",
     "amenities": "Bathrobes and Robes, Slippers, Hairdryer, Safe, Mini Bar, Tea & Coffee Making Facilities, Flat Screen TV, Telephone, Free WiFi, Smoke-free room",
     "price": "€ 295 p/night ",
-    "Picture": "https://www.royalpalmsharm.com/wp-content/uploads/2018/07/Double-Room-1.jpg"
-}]
+    "Picture": "http://localhost:3001/img/room1.jpg"
+  }
+]
