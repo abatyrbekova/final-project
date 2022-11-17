@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import "./stay.css";
 
 export default function Stay() {
   const [rooms, setRooms] = useState([]);
+  let navigate = useNavigate();
 
   const fetchData = async () => {
     try {
@@ -14,6 +16,10 @@ export default function Stay() {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  let handleBook = () => {
+    navigate("/booking");
   };
 
   // fetch data from server
@@ -53,7 +59,9 @@ export default function Stay() {
                 <div className="card-text-inner">
                   <h2>{item.name}</h2>
                   <p>{item.description}</p>
-                  <button className="btn-card">book now</button>
+                  <button onClick={handleBook} className="btn-card">
+                    book now
+                  </button>
                 </div>
               </div>
             </div>
