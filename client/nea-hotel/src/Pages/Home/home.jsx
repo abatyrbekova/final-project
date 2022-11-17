@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import video from "../../../public/img/video/IGLUT2021VID.H264.mp4"
 
 export default function Home() {
     return (

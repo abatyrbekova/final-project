@@ -11,3 +11,5 @@ const activitySchema = new Schema({
     rating: { type: Number, min: 1, max: 5, default: 1 },
     isAvailable: {type:Boolean},
 });
+
+export default activitySchema;
