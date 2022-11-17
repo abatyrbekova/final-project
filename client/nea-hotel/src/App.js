@@ -9,21 +9,21 @@ import Menu from "./Pages/EatAndDrink/menu";
 import Contact from "./Pages/Contact/contact";
 
 import "./App.css";
+import Booking from "./Pages/Booking/Booking";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="main-wrapper">
-        <Routes>
-          <Route path="/stay" element={<Stay />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/stay" element={<Stay />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </div>
   );
 }

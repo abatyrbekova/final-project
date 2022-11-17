@@ -13,8 +13,6 @@ const menuSchema = new Schema({
         price: { type: Number, required: true },
     }, 
     images: { type: [String], required: true },
-}, {collection: "menu"});
+});
 
-const Menu = model ("menu", menuSchema);
-
-export default Menu;
+export default menuSchema;
