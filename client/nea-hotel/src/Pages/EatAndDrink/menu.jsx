@@ -23,33 +23,35 @@ export default function Menu() {
         }, []);
 
     return (
-        <div className="container">
-            <div className="landing-img">
-                <p>
-                    EAT & DRINK
-                    <br></br>
-                    Experience our local gastronomy under the most breathtaking views
-                </p>
+        <div className="containerMenu">
+            <div className="tableIgloosView-img">
+                <h3>
+                    Experience our local cuisine
+                </h3>
+                <h3>
+                    under the most breathtaking views
+                </h3>
             </div>
             
-            <div className="cards">
+            <div className="cardsMenu">
                 {menu && menu.map((item, index) => (
-                    <div className="card" key={index}>
-                        <div className="card-img">
+                    <div className="cardMenu" key={index}>
+                        <div className="card-menu-img">
                             <a>
-                                <img src={item.img} alt="food" />
+                                <img src={item.images} alt="food" />
                             </a>
                         </div>
-                        <div className="card-text">
-                            <div className="card-text-inner">
+                        <div className="card-menu-text">
+                            <div className="card-menu-text-inner">
                                 <h2>{item.name}</h2>
                                 <p>{item.description}</p>
-                                <p>{item.time}</p>
+                                <p>{item.price}</p>
+                                <h3>{item.time}</h3>
                             </div>
                         </div>
                     </div>
                 ))}
-            </div>;
+            </div>
         </div>
     );
 }
