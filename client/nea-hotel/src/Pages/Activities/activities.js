@@ -34,38 +34,6 @@ export default function Activites() {
         {/* <img src="/img/landing.jpg" alt="background-image" /> */}
       </div>
 
-      {/* <div className="cards">
-        {activities &&
-          activities.map((item, index) => {
-            console.log(item.image);
-            if (index % 2 === 1) {
-              return (
-                <div className="card" key={index}>
-                  <div className="card-img ">
-                    <img src="/img/activity/activity1.jpg" alt="img" />
-                  </div>
-                  <div className="card-text">
-                    <h2>{item.name}</h2>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-              );
-            } else {
-              return (
-                <div className="card" key={index}>
-                  <div className="card-text">
-                    <h2>{item.name}</h2>
-                    <p>{item.description}</p>
-                  </div>
-                  <div className="card-img ">
-                    <img src="/img/activity/activity1.jpg" alt="img" />
-                  </div>
-                </div>
-              );
-            }
-          })}
-      </div> */}
-
       <div className="cards">
         {activities &&
           activities.map((item, index) => (
