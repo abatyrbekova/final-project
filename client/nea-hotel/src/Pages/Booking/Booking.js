@@ -1,6 +1,6 @@
 import React from "react";
-import { faCalendarDays, faPerson } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarDays, faPerson } from "@fontawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
 import "./booking.css";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
