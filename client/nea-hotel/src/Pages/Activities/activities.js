@@ -25,11 +25,8 @@ export default function Activites() {
     <div className="container">
       {/* {console.log(activities.length())} */}
       <div className="landing-img">
-        <p>
-          ACTIVE HOLIDAYS
-          <br></br>
-          throughout the aurora borealis season
-        </p>
+        <h3>ACTIVE HOLIDAYS</h3>
+        <h3>throughout the aurora borealis season</h3>
 
         {/* <img src="/img/landing.jpg" alt="background-image" /> */}
       </div>

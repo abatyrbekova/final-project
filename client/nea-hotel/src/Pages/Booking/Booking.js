@@ -1,6 +1,6 @@
 import React from "react";
-import { faCalendarDays, faPerson } from "@fontawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
+//import { faCalendarDays, faPerson } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./booking.css";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
@@ -48,7 +48,7 @@ function Booking({ type }) {
 
         <div className="bSearch">
           <div className="bSearchItem">
-            <FontAwesomeIcon icon={faCalendarDays} className="bIcon" />
+            {/*  <FontAwesomeIcon icon={faCalendarDays} className="bIcon" /> */}
             <span
               onClick={() => setOpenDate(!openDate)}
               className="bSearchText"
@@ -68,7 +68,7 @@ function Booking({ type }) {
             )}
           </div>
           <div className="bSearchItem">
-            <FontAwesomeIcon icon={faPerson} className="bIcon" />
+            {/*<FontAwesomeIcon icon={faPerson} className="bIcon" /> */}
             <span
               onClick={() => setOpenOptions(!openOptions)}
               className="bSearchText"

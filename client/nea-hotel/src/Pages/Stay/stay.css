@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,20 +11,17 @@
   color: rgb(86, 83, 83);
 }
 .stay-img {
-  /* height: 100vh; */
   width: 100%;
   background-image: url(./img/landingroom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 20%;
-  /*border: 1px red solid;*/
+
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 5px red solid; */
-  /* padding-top: 2%; */
-  /* padding-bottom: 2%; */
+
   position: relative;
 }
 .stay-img::after {
@@ -41,25 +38,24 @@
   position: relative;
   z-index: 3;
   text-align: center;
-}
+} */
 
-.cards {
+/* .cards {
   display: flex;
   flex-wrap: wrap;
 }
 .cards .card {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 2%; */
   width: 100%;
 }
 .cards .card:nth-child(even) {
   flex-direction: row-reverse;
-}
+} 
 
 .cards .card:nth-child(even) .card-img {
   justify-content: flex-start;
-}
+} 
 
 .cards .card .card-img {
   display: flex;
@@ -73,9 +69,9 @@
 .cards .card .card-img img {
   width: 100%;
   height: 100%;
-}
+} */
 
-.cards .card:nth-child(odd) .card-text {
+/* .cards .card:nth-child(odd) .card-text {
   justify-content: flex-start;
 }
 
@@ -83,7 +79,7 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  /* padding: 3%; */
+  
 }
 .cards .card .card-text .card-text-inner {
   width: 63%;
@@ -104,4 +100,136 @@
   outline: none;
 
   margin-top: 10%;
+}   */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------* */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container p {
+  font-family: "Raleway", sans-serif;
+}
+
+.stay-img {
+  width: 100%;
+  background-image: url(./img/landingroom.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
+
+.stay-img h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(133, 93, 93);
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.cards .card {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: solid black 2px;
+  margin-top: 2rem;
+  color: rgb(133, 93, 93);
+  background-color: rgba(248, 230, 230, 0.4);
+}
+
+/* .cardsMenu .cardMenu:nth-child() .card-menu-img {
+    justify-content: flex-start;
+} */
+
+.cards .card .card-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.cards .card .card-img a {
+  width: 60%;
+  display: flex;
+}
+
+.cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards .card .card-img img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.cards .card .card-text {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.cards .card .card-text .card-text-inner {
+  width: 73%;
+  padding: 3%;
+}
+
+.cards .card .card-text .card-text-inner h2 {
+  /* font-size: 2vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cards .card .card-text .card-text-inner p {
+  /* font-size: 1.5vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.cards .card .card-text .card-text-inner h3 {
+  /* font-size: 1.5vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.btn-card {
+  padding: 3%;
+  /* background-color: rgb(127, 178, 220); */
+  background-color: rgb(133, 93, 93);
+
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.btn-card:hover {
+  font-size: 2rem;
+  cursor: mouse;
 }
