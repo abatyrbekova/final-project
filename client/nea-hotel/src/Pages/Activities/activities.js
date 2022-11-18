@@ -25,46 +25,11 @@ export default function Activites() {
     <div className="container">
       {/* {console.log(activities.length())} */}
       <div className="landing-img">
-        <p>
-          ACTIVE HOLIDAYS
-          <br></br>
-          throughout the aurora borealis season
-        </p>
+        <h3>ACTIVE HOLIDAYS</h3>
+        <h3>throughout the aurora borealis season</h3>
 
         {/* <img src="/img/landing.jpg" alt="background-image" /> */}
       </div>
-
-      {/* <div className="cards">
-        {activities &&
-          activities.map((item, index) => {
-            console.log(item.image);
-            if (index % 2 === 1) {
-              return (
-                <div className="card" key={index}>
-                  <div className="card-img ">
-                    <img src="/img/activity/activity1.jpg" alt="img" />
-                  </div>
-                  <div className="card-text">
-                    <h2>{item.name}</h2>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-              );
-            } else {
-              return (
-                <div className="card" key={index}>
-                  <div className="card-text">
-                    <h2>{item.name}</h2>
-                    <p>{item.description}</p>
-                  </div>
-                  <div className="card-img ">
-                    <img src="/img/activity/activity1.jpg" alt="img" />
-                  </div>
-                </div>
-              );
-            }
-          })}
-      </div> */}
 
       <div className="cards">
         {activities &&

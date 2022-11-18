@@ -1,131 +1,54 @@
-/* .menuTitle {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #f5f5f5;
-    padding: 0 20px;
-    margin-bottom: 4rem;
-}
-.menu h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-    padding: 20px;
-}
-
-.descriptionFoodOptions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 60rem;
-    height: 25rem;
-    background-color: whitesmoke;
-    border: solid black 2px;
-    padding: 10px;
-    margin-top: 3rem;
-}
-
-.imageFood {
-    width: 60rem;
-    height: 20rem;
-    background-color: lightgray;
-    border: solid black 2px;
-    padding: 0 10px;
-}
-
-.textFood {
-    width: 60rem;
-    height: 10rem;
-    background-color: whitesmoke;
-    font-family: 'Raleway', sans-serif;
-    padding: 0 10px;
-} */
-
 .containerMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .containerMenu p {
-    font-family: 'Raleway', sans-serif;
-
-    /* font-size: 1rem;
-    font-weight: 400;
-    color: rgb(86, 83, 83); */
-    /* font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: rgb(156, 111, 111);
-    margin-bottom: 1rem; */
+  font-family: "Raleway", sans-serif;
 }
-
-
 
 .tableIgloosView-img {
-    width: 100%;
-    background-image: url(./img/tableIgloosView.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20%;
-} 
-
-.tableIgloosView-img h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(133, 93, 93);
-    margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-    background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  background-image: url(./img/tableIgloosView.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
 }
 
-/* .tableIgloosView-img h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(6, 99, 102);
-    margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
-    background-color: rgba(133,93,93,0.5);
-} */
-
+.tableIgloosView-img h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(133, 93, 93);
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
 .cardsMenu {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .cardsMenu .cardMenu {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;    
-    border: solid black 2px;
-    margin-top: 2rem;
-    color: rgb(133, 93, 93);
-    background-color: rgba(248, 230, 230, 0.4);
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: solid black 2px;
+  margin-top: 2rem;
+  color: rgb(133, 93, 93);
+  background-color: rgba(248, 230, 230, 0.4);
 }
 
 /* .cardsMenu .cardMenu:nth-child() .card-menu-img {
@@ -133,25 +56,25 @@
 } */
 
 .cardsMenu .cardMenu .card-menu-img {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .cardsMenu .cardMenu .card-menu-img a {
-    width: 60%;
-    display: flex;
+  width: 60%;
+  display: flex;
 }
 
 .cardsMenu .cardMenu .card-menu-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cardsMenu .cardMenu .card-menu-img img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
 /* .cardsMenu .card:nth-child(odd) .card-menu-text {
@@ -159,35 +82,35 @@
 } */
 
 .cardsMenu .cardMenu .card-menu-text {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner {
-    width: 73%;
-    padding: 3%;
+  width: 73%;
+  padding: 3%;
 }
 
 .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner h2 {
-    /* font-size: 2vw; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+  /* font-size: 2vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner p {
-    /* font-size: 1.5vw; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-top: 1rem;
+  /* font-size: 1.5vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
 }
 
 .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner h3 {
-    /* font-size: 1.5vw; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-top: 1rem;
+  /* font-size: 1.5vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
 }

@@ -21,7 +21,7 @@ export default function Stay() {
   let handleBook = () => {
     navigate("/booking");
   };
-
+  //test
   // fetch data from server
   useEffect(() => {
     fetchData().then((data) => setRooms(data));
@@ -31,11 +31,8 @@ export default function Stay() {
     <div className="container">
       {/* {console.log(rooms.length())} */}
       <div className="stay-img">
-        <p>
-          Magic Nights in a glass igloo
-          <br></br>
-          Under the Arctic Sky
-        </p>
+        <h3>Magic Nights in a glass igloo</h3>
+        <h3>Under the Arctic Sky</h3>
 
         {/* <img
           src="./img/rooms/igloo-interior-panoramic-view-autom-Sunset.jpg"
