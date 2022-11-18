@@ -1,10 +1,29 @@
 import React from "react";
+import "./home.css";
+import video from "./video/IGLUT2021VID.H264.mp4";
 
 export default function Home() {
-    return (
-        <div>
-            <h1>Home</h1>
-            <img className="hotel" src="https://images.unsplash.com/photo-1517436073-3b1b1b1b1b1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjBjb2xvciUyMGZyYW1ld29yayUyMGNvbG9yc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="hotel" />
+  return (
+    <div className="containerHome">
+      <div className="welcome-box">
+        <video
+          src={video}
+          autoPlay={true}
+          controls={true}
+          className="welcome-vid"
+        />
+        <div className="welcome-text">
+          <h1>
+            NEA Hotel
+            <span>the first glass igloo hotel in Germany</span>
+          </h1>
+          <a href="http://localhost:3000/stay">
+            <button className="learn-about-btn" type="button">
+              Learn about the igloos
+            </button>
+          </a>
         </div>
-    );
-}   
+      </div>
+    </div>
+  );
+}

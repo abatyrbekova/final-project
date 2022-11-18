@@ -7,12 +7,14 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <div className="navbar-logo">
-        <h2>NEA Hotel</h2>
+        <NavLink to="/">
+          <img
+            className="logo"
+            src={process.env.PUBLIC_URL + "/img/logo/Logo dark-bg.png"}
+          />
+        </NavLink>
       </div>
       <ul className="navbar-links">
-        <li className="nav-link">
-          <NavLink to="/">Home</NavLink>
-        </li>
         <li className="nav-link">
           <NavLink to="/stay">Stay</NavLink>
         </li>

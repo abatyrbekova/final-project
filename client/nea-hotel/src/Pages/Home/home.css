@@ -1,0 +1,57 @@
+.containerHome p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.welcome-vid {
+    width: 100%;
+} 
+
+.welcome-text {
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 0 15px;
+    top: 50%;
+    transform: translateY(-280%);
+}
+
+.welcome-text h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: 'BioRhyme', serif;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.welcome-text h1 span {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    display: block;
+    box-sizing: inherit;
+}
+
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 2px;
+    display: inline-block;
+    margin-top: 2rem;
+    
+}
+.learn-about-btn {
+    padding: 1.5rem;
+    background-color: rgba(82,149,166,.9);
+    border: 0 solid #fff;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
