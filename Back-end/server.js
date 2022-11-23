@@ -7,6 +7,7 @@ import roomRoutes from "./routes/roomRoutes.js";
 import activityRoutes from "./routes/activityRoutes.js";
 import menuRoutes from "./routes/menuRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js"; // 21-11
 import configureJwtStrategy from "./passport-config.js";
 
 // inside the backend u must create "images" folder and put inside it the all images, and then in the DB the url should be like this http://localhost:3001/img/flower.jpg
@@ -33,6 +34,10 @@ mongoose
     console.log("🤨");
   });
 
+// app.post("/api/orders/create", (req, res) => {
+//   res.send("ok");
+// });
+app.use("/api/orders", orderRoutes); //21-11
 app.use("/api/rooms", roomRoutes);
 app.use("/api/activities", activityRoutes);
 app.use("/api/menu", menuRoutes);
