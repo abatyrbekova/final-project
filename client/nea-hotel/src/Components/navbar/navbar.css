@@ -1,0 +1,30 @@
+.nav {
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+.nav ul {
+  z-index: 105;
+}
+
+.nav-scrolled {
+  background-color: #fff;
+}
+
+.nav-scrolled a {
+  color: black;
+}
+
+.nav-scrolled a:hover {
+    color: rgb(145, 96, 96);
+  }
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.navbar-links {
+  z-index: 105;
+}
