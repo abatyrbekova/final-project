@@ -29,12 +29,12 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*border: 1px solid black;*/
-  /* gap: 3rem; */
   padding: 0.3% 0.5%;
-  font-family: "Raleway", sans-serif;
-  /* font-size: 1.5rem; */
-  background-color: rgb(153, 192, 242);
+  color: #fff;
+  font-family: biorhyme,serif;
+  text-decoration: none;
+  font-weight: 700;
+  /* text-transform: uppercase; */
 }
 
 .navbar-logo {
@@ -42,7 +42,6 @@ code {
   font-size: 1.5vw;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  /* border: 1px red solid; */
   width: 15%;
 }
 
@@ -53,20 +52,15 @@ code {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  /*border: 1px red solid;*/
   width: 65%;
 }
-/* .nav ul li a{
-
-} */
 
 .nav a {
   display: flex;
   color: inherit;
   text-decoration: none;
   align-items: center;
-  /* gap: 1rem; */
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 
 .nav a:hover {
@@ -78,22 +72,26 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 1rem; */
-  /*border: 1px red solid;*/
-  width: 15%;
+  width: 200px;
+
 }
 
 .navbar__auth button {
   padding: 0.5% 0%;
-  width: 100%;
+  width: 70%;
+  height: 70px;
+
   border: none;
-  /* border-radius: 5px; */
+  border-radius: 25px;
   background-color: #1e2122;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   cursor: pointer;
   color: white;
+  /* text-transform: uppercase; */
+  font-family: "biorhyme", serif;
+ 
 }
 
 .navbar__auth button:hover {
