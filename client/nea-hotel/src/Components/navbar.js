@@ -8,10 +8,10 @@ export default function Navbar() {
     <nav className="nav">
       <div className="navbar-logo">
         <NavLink to="/">
-          <img
+          {/* <img
             className="logo"
             src={process.env.PUBLIC_URL + "/img/logo/Logo dark-bg.png"}
-          />
+          /> */}
         </NavLink>
       </div>
       <ul className="navbar-links">
@@ -29,8 +29,11 @@ export default function Navbar() {
         </li>
       </ul>
       <div className="navbar__auth">
-        <button className="btn btn--primary" onClick={() => navigate("/login")}>
-          Book Now
+        <button
+          className="btn btn--primary"
+          onClick={() => navigate("booking")}
+        >
+          Booking
         </button>
       </div>
     </nav>

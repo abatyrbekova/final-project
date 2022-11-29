@@ -11,6 +11,8 @@ import Contact from "./Pages/Contact/contact";
 import "./App.css";
 import Booking from "./Pages/Booking/Booking";
 
+import Register from "././Pages/Register/Register";
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
