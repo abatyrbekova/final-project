@@ -1,31 +1,86 @@
-import React from "react";
+import React  from 'react';
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 import "./contact.css";
 
-export default function Contact() {
+function Contact() {  
+    const form = useRef();
 
-    return (
-        <div className="containerContact">
-                        <div className="contact-img">
-                <h3>
-                    Please contact us for more information
-                </h3>
-                <h3>
-                    or to book your stay
-                </h3>
-            </div>
-            <div className="containerContact-form">
-                <form className="contact-form">  
-                    <label className="titleContact" for="firstName">First name:</label><br/>
-                    <input className="form-text" type="text" id="firstName" name="firstName"/><br/>
-                    <label className="titleContact" for="lastName">Last name:</label><br/>
-                    <input className="form-text" type="text" id="lastName" name="lastName"/><br/>
-                    <label className="titleContact" for="email">Email:</label><br/>
-                    <input className="form-text" type="text" id="email" name="email"/><br/>
-                    <label className="titleContact" for="message">Message:</label><br/>
-                    <input className="form-text" type="text" id="message" name="message"/><br/>
-                    <input className="btn-submit" type="submit" value="Submit"/>
-                </form>
-            </div>
+    const sendEmail = (e) => {
+        e.preventDefault(true);
+
+        emailjs.sendForm('service_bzc719a', 'template_r3kez12', form.current, 'SuPOrn3aFlQ5nfPik')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+        });
+
+        e.target.reset()
+        
+};
+
+
+
+return (
+
+    <div class="containerContact">
+        <div class="contact-img">
+            <h3>
+                Contact us for more information
+            </h3>
         </div>
+            {/* <!-- contact form --> */}
+            <form className='containerContact-form' ref={form} onSubmit={sendEmail}>
+            {/* <!-- name --> */}
+            <div class="contact-form">
+                <label className='form-text' for="name">Name</label>
+                <input className='form-text'
+                type="name"
+                name="name"
+                id="name"
+                placeholder="enter your name"
+                />
+            </div>
+
+            {/* <!-- email --> */}
+            <div class="contact-form">
+                <label className='form-text' for="email">Email address</label>
+                <input className='form-text'
+                type="email"
+                name="email"
+                id="email"
+                placeholder="enter your email"
+                />
+            </div>
+
+            {/* <!-- subject --> */}
+            <div class="contact-form">
+                <label className='form-text' for="subject">Subject</label>
+                <input className='form-text'
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="enter email subject"
+                />
+            </div>
+
+            <div class="contact-form">
+                <label className='form-text' for="email_body">Message</label>
+                <textarea className='form-text'
+                id="email_body"
+                rows="5"
+                ></textarea>
+            </div>
+
+            <button className="btn-submit" type="submit">
+                Submit
+            </button>
+            </form>
+
+    </div>
     );
-}
+};
+
+
+export default Contact;
