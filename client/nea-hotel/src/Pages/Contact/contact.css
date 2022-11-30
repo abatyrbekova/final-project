@@ -12,7 +12,12 @@ font-family: "Raleway", sans-serif;
 
 .contact-img {
 width: 100%;
-background-image: url(./img/contact-img.jpg);
+background-image: radial-gradient(
+    ellipse at center,
+    rgba(19, 57, 94, 0.6) 0%,
+    rgba(213, 220, 226, 0) 69%,
+    rgba(255, 255, 255, 0.3) 84%
+),url(./img/contact-img.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -25,52 +30,89 @@ padding-top: 20%;
 }
 
 .contact-img h3 {
-font-size: 2rem;
-font-weight: 600;
-color: rgb(133, 93, 93);
+    display: flex;
+justify-content: center;
+text-align: center;
+font-size: 3rem;
+font-weight: 400;
+/* color: rgba(133, 93, 93, 0.6); */
+/* color: white; */
+color: white;
 margin-bottom: 1rem;
-font-family: "Raleway", sans-serif;
-background-color: rgba(255, 255, 255, 0.4);
+font-family: biorhyme, sans-serif;
+/* background-color: rgba(232, 244, 247, 0.5); */
+/* background-color: rgba(255, 255, 255, 0.4); */
+padding-bottom: 1rem;
 }
 
 .containerContact-form {
-width: 60%;
+align-self: center;
+width: 50%;
 margin-top: 4rem;
 margin-bottom: 4rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
 flex-wrap: wrap;
+/* background-color: rgba(248, 230, 230, 0.4); */
+/* background-color: rgba(228, 237, 240, 0.9);  */
+/* background-color: rgba(232, 244, 247, 0.5) */
 background-color: rgba(248, 230, 230, 0.4);
-border: solid black 2px;
+/* border: solid black 2px; */
 }
 
 .contact-form{
-margin: 4rem;
-font-family: railway, sans-serif;
-color:rgb(133, 93, 93);
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 2%;
+margin: 0rem, 1rem;
+font-family: "raleway", sans-serif;
+font-weight: 400;
+/* color:rgb(161, 139, 139); */
+/* color: rgba(82,149,166,.9); */
+color: rgb(133, 93, 93);
+/* color: black; */
 font-size: 1.3rem;
 }
 
+/* label {
+margin-bottom: 1rem;
+} */
+
 .form-text {
+    padding: 2%;
     width: 100%;
-    height: 2rem;
-    font-family: railway, sans-serif;
-    color:rgb(133, 93, 93);
+    height: 4rem;
+    font-family: "raleway", sans-serif;
+    /* color: rgb(133, 93, 93); */
+    /* color:rgb(133, 93, 93); */
+    /* color: black; */
     font-size: 1.3rem;
+}
+
+input {
+    width: 100%;
+    height: 3rem;
 }
 
 .btn-submit {
     width: 100%;
     height: 2rem;
-    font-family: railway, sans-serif;
-    color:rgb(133, 93, 93);
+    font-family: biorhyme, sans-serif;
+    /* color:rgb(133, 93, 93); */
     font-size: 1.3rem;
-    background-color: rgba(133, 93, 93, 0.8);
-    color: white;
+    font-weight: 300;
+    /* background-color: rgba(97, 169, 187, 0.5); */
+    background-color: rgba(133, 93, 93, 0.4);
+    /* background-color: white;    */
+    /* color: white; */
+    color: black; 
     border: none;
     border-radius: 5px;
     margin: 2rem 0;
+    cursor: pointer;
+    
 }
 
 /* .containerContact-form .contact-form {
