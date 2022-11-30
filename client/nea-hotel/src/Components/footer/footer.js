@@ -34,7 +34,7 @@ export default function Footer() {
         <NavLink to="/">
           <img
             className="footer-logo"
-            src={FooterLogoLight}
+            src={FooterLogoLight} alt="logo"
             onMouseOver={(e) => (e.target.src = FooterLogoDark)}
             onMouseOut={(e) => (e.target.src = FooterLogoLight)}
           />

@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav className={isTransparent ? "nav" : "nav nav-scrolled"}>
       <div className="navbar-logo">
         <NavLink to="/">
-          { window.scrollY >= 90 ? <img className="logo" src={NavbarDarkLogo} /> : <img className="logo" src={NavbarLogo} />}
+          { window.scrollY >= 90 ? <img className="logo" src={NavbarDarkLogo} alt="logo" /> : <img className="logo" src={NavbarLogo} alt="logo" />}
         </NavLink>
       </div>
       <ul className="navbar-links">
