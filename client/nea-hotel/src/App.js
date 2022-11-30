@@ -7,6 +7,7 @@ import Stay from "./Pages/Stay/stay";
 import Activities from "./Pages/Activities/activities";
 import Menu from "./Pages/EatAndDrink/menu";
 import Contact from "./Pages/Contact/contact";
+import Footer from "./Components/footer/footer";
 
 import "./App.css";
 import Booking from "./Pages/Booking/Booking";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

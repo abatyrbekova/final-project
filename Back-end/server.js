@@ -9,6 +9,7 @@ import menuRoutes from "./routes/menuRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js"; // 21-11
 import configureJwtStrategy from "./passport-config.js";
+import hotelRoutes from "./routes/hotelRoutes.js";
 
 // inside the backend u must create "images" folder and put inside it the all images, and then in the DB the url should be like this http://localhost:3001/img/flower.jpg
 dotenv.config();
@@ -42,6 +43,7 @@ app.use("/api/rooms", roomRoutes);
 app.use("/api/activities", activityRoutes);
 app.use("/api/menu", menuRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/hotel", hotelRoutes);
 
 // pictures
 app.use("/img", express.static("./images"));
