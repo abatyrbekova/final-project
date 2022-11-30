@@ -25,12 +25,14 @@ export default function Menu() {
     return (
         <div className="containerMenu">
             <div className="tableIgloosView-img">
+                {/* <div className="tableIglooView-img-h3">   
+                </div> */}
                 <h3>
-                    Experience our local cuisine
+                    Experience our local cuisine under the most breathtaking views
                 </h3>
-                <h3>
-                    under the most breathtaking views
-                </h3>
+                
+
+
             </div>
             
             <div className="cardsMenu">
