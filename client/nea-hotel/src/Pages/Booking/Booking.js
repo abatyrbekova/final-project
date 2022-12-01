@@ -243,7 +243,7 @@ function Booking({ type }) {
         </div>
       ) : (
         <div className="big-container">
-          <p>put hier the reserved room</p>
+          <p>Put here the reserved room</p>
         </div>
       )}
     </div>
