@@ -17,12 +17,12 @@ function Contact() {
         });
 
         e.target.reset()
-        
-};
+
+    };
 
 
 
-return (
+    return (
 
     <div class="containerContact">
         <div class="contact-img">

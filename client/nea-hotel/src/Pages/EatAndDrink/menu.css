@@ -1,3 +1,10 @@
+/* @media screen and (min-width: 780px) {
+  .containerMenu .cardsMenu .cardMenu .card-menu .card-menu-text-inner{
+  margin: auto;
+  width: 90%;
+  }
+} */
+
 .containerMenu {
   display: flex;
   flex-direction: column;
