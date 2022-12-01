@@ -156,7 +156,7 @@
   width: 10%;
 }
 .headerBtn {
-  background-color: rgb(133, 93, 93);
+  background-color: rgba(133, 93, 93, 0.8);
   border: none;
   outline: none;
   cursor: pointer;
@@ -167,7 +167,9 @@
 }
 .headerBtn:hover {
   transform: scale(1.1);
-  box-shadow: 1px 1px 2px black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  /* box-shadow: 1px 1px 2px black; */
 }
 
 /******************************************************************/
@@ -217,7 +219,7 @@
   object-fit: cover;
 }
 
-.r-card .r-card .r-card-img img:hover {
+.r-cards .r-card .r-card-img img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
@@ -246,10 +248,10 @@
   font-size: 1.5rem;
   font-weight: 400;
   padding-top: 1rem;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 .bold-text {
-  color: rgb(68, 33, 13);
+  color: rgb(140, 100, 93);
 }
 .r-cards .r-card .r-card-text .r-card-text-inner h3 {
   /* font-size: 1.5vw; */
@@ -260,20 +262,29 @@
 }
 
 .btn-r-card {
-  padding: 3%;
   /* background-color: rgb(127, 178, 220); */
-  background-color: rgb(133, 93, 93);
+  /* background-color: rgb(133, 93, 93); */
 
   border: none;
   outline: none;
-  color: antiquewhite;
+  color: white;
   margin-top: 10%;
   padding: 5%;
+  /*    Erika */
+  background-color: rgba(133, 93, 93, 0.6);
+  font-family: "biorhyme", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn-r-card:hover {
   /* font-size: 2rem; */
   transform: scale(1.1);
-  box-shadow: 1px 1px 3px black;
+  /* box-shadow: 1px 1px 3px black;*/
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card-title {
+  font-family: "biorhyme", sans-serif;
 }

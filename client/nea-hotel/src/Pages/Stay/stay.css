@@ -124,14 +124,15 @@ Suite Igloo
 }
 
 .stay-img {
-     /*radial-gradient added to the picture background by Erika.01-12-2022. */
+  /*radial-gradient added to the picture background by Erika.01-12-2022. */
   width: 100%;
   background-image: radial-gradient(
-    ellipse at center,
-    rgba(19, 57, 94, 0.6) 0%,
-    rgba(213, 220, 226, 0) 69%,
-    rgba(255, 255, 255, 0.3) 84%)
-  , url(./img/landingroom.jpg);
+      ellipse at center,
+      rgba(19, 57, 94, 0.6) 0%,
+      rgba(213, 220, 226, 0) 69%,
+      rgba(255, 255, 255, 0.3) 84%
+    ),
+    url(./img/landingroom.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -259,11 +260,9 @@ Suite Igloo
 }
 
 .btn-card:hover {
-
   /*Changes made by Erika.01-12-2022. */
   transform: scale(1.1);
   transition: all 0.5s ease;
   /* font-size: 2rem;
   cursor: mouse;*/
-} 
-
+}

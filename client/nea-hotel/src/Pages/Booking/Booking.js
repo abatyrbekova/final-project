@@ -91,7 +91,7 @@ function Booking({ type }) {
       {RESET_SEARCH ? (
         <div className="big-container">
           <div className="bContainer">
-            <h1 className="bTitle">Book a room</h1>
+            <h1 className="bTitle"></h1>
 
             <div className="bSearch">
               <div className="bSearchItem">
@@ -208,7 +208,7 @@ function Booking({ type }) {
                   </div>
                   <div className="r-card-text">
                     <div className="r-card-text-inner">
-                      <h2>{item.name}</h2>
+                      <h2 className="card-title">{item.name}</h2>
                       <p>
                         <b className="bold-text">Description: </b>
                         {item.description}
@@ -243,7 +243,7 @@ function Booking({ type }) {
         </div>
       ) : (
         <div className="big-container">
-          <p>put hier the reserved room</p>
+          <p>Put here the reserved room</p>
         </div>
       )}
     </div>
