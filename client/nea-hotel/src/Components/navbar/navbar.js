@@ -3,8 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 import NavbarLogo from "./img/nea_hotel_logo.jpg";
-// import NavbarLogo from "./img/nea_hotel_light_logo.png";
-// import NavbarLogo from "./img/nea_hotel_dark_logo.png";
+import NavbarDarkLogo from "./img/nea_hotel_dark_logo.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -28,7 +27,7 @@ export default function Navbar() {
     <nav className={isTransparent ? "nav" : "nav nav-scrolled"}>
       <div className="navbar-logo">
         <NavLink to="/">
-          <img className="logo" src={NavbarLogo} />
+          { window.scrollY >= 90 ? <img className="logo" src={NavbarDarkLogo} alt="logo" /> : <img className="logo" src={NavbarLogo} alt="logo" />}
         </NavLink>
       </div>
       <ul className="navbar-links">
