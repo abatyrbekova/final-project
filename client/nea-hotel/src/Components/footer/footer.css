@@ -40,6 +40,7 @@
 .footer-sm-links {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.6rem;
 }
 
 .footer-sm li {
