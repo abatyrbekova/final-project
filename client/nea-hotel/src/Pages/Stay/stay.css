@@ -35,7 +35,14 @@
 }
 .stay-img > p {
   color: white !important;
-  position: relative;
+  position: relative;2 adult · 0 children · 1 room
+￼Search
+￼
+Superior Deluxe Igloo
+￼
+Superior Igloo
+￼
+Suite Igloo
   z-index: 3;
   text-align: center;
 } */
@@ -252,9 +259,11 @@
 }
 
 .btn-card:hover {
+
   /*Changes made by Erika.01-12-2022. */
   transform: scale(1.1);
   transition: all 0.5s ease;
   /* font-size: 2rem;
   cursor: mouse;*/
 } 
+

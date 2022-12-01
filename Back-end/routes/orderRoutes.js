@@ -93,12 +93,12 @@ router.get(
       // filter  to get all unbooked rooms based on the number of adults and children
       const rooms = await Room.find({
         _id: { $nin: bookedRooms },
-        adults: { $eq: adults },
-        children: { $eq: children },
+        adults: { $gte: adults },
+        children: { $gte: children },
       });
       // return res.status(200).json({ rooms, allOrders });
       //return res.status(200).json(allOrders);
-      return res.status(200).json({ rooms });
+      return res.status(200).json(rooms);
     } catch (err) {
       next(err);
     }

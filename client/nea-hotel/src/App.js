@@ -12,6 +12,9 @@ import Footer from "./Components/footer/footer";
 import "./App.css";
 import Booking from "./Pages/Booking/Booking";
 
+import Register from "././Pages/Register/Register";
+import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +26,8 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/shopping" element={<ShoppingCart />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
