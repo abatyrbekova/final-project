@@ -211,7 +211,9 @@
 
 .cards .card .card-text .card-text-inner h2 {
   /* font-size: 2vw; */
-  font-family: "Raleway", sans-serif;
+  /*Changes made by Erika.01-12-2022. */
+  font-family: "biorhyme", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   font-size: 1.5rem;
   font-weight: 600;
 }
