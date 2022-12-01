@@ -11,27 +11,31 @@ import { format } from "date-fns";
 //import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-//import { SearchContext } from "../../context/SearchContext.js";
+// import the context
+import { Context } from "../../Components/context/searchContext";
 
 function Booking({ type }) {
   let navigate = useNavigate();
 
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  const { date, setDate } = useContext(Context);
+  console.log("🚀 ~ file: Booking.js ~ line 21 ~ Booking ~ date", date);
+
+  // console.log(
+  //   "🚀 ~ file: Booking.js ~ line 23 ~ Booking ~ dateObj",
+  //   arrayDate.slice(1, 5)
+  // );
+  // console.log);
+  // console.log(
+  //   "The difference is: ",
+  //   dateObj.endDate.slice(9, 10) - dateObj.startDate.slice(9, 10)
+  // );
+  const { roomCart, setRoomCart } = useContext(Context);
+
   const [openOptions, setOpenOptions] = useState(false);
   const [openDate, setOpenDate] = useState(false);
-  const [options, setOptions] = useState({
-    adults: 1,
-    children: 0,
-    room: 1,
-  });
+  const { options, setOptions } = useContext(Context);
 
-  const [rooms, setRooms] = useState();
+  const { rooms, setRooms } = useContext(Context);
 
   //increase and decrease the number of adults , children ,room
   const handleOption = (name, operation) => {
@@ -66,8 +70,16 @@ function Booking({ type }) {
     //console.log(rooms);
   };
 
-  const handleRegister = () => {
+  const handleRegister = (id) => {
     //console.log("The id of the booked room is ", id);
+    const result = rooms.filter((item) => item._id === id);
+    console.log("=================================", result[0]);
+    //console.log("hello from handelRegister , your chosen room is :", result);
+    setRoomCart(result[0]);
+    console.log(
+      "hello from handelRegister, SetRoomCart is equal to :",
+      roomCart
+    );
     navigate("/register");
   };
 
@@ -217,7 +229,10 @@ function Booking({ type }) {
                         <b className="bold-text">Price: </b>
                         {item.price}
                       </p>
-                      <button className="btn-r-card" onClick={handleRegister}>
+                      <button
+                        className="btn-r-card"
+                        onClick={() => handleRegister(item._id)}
+                      >
                         book now
                       </button>
                     </div>

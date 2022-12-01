@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const { Schema, model } = mongoose;
 
 const roomSchema = new Schema({
+
   name: { type: String, required: true },
   size: { type: String, required: true },
   description: { type: String, required: true },
@@ -15,7 +16,7 @@ const roomSchema = new Schema({
   isAvailable: { type: Boolean },
   adults: { type: Number },
   children: { type: Number },
-  //bookeddates: [{ startDate, endDate }],
+  //bookeddates: [{ startDate, endDate }], 
 });
 
 const Room = model("room", roomSchema);

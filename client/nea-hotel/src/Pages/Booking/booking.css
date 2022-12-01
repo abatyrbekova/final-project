@@ -15,7 +15,7 @@
   background-color: rgba(255, 255, 255, 0.352);
 }
 .big-container {
-  border: 5px solid blue;
+  /* border: 5px solid rgb(74, 46, 46);*/
   color: white;
   display: flex;
   flex-direction: column;

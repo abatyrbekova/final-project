@@ -1,0 +1,132 @@
+.main-container {
+  background-image: url(./img/loungeWindowView.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  min-height: 100vh;
+  max-height: 100%;
+  position: relative;
+}
+.main-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.big-container {
+  /* border: 5px solid rgb(74, 46, 46);*/
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+  padding: 2%;
+  /* border: 2px solid red; */
+}
+
+.bContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+
+  /*border: 2px solid rgb(77, 56, 56);*/
+  /* background: green; */
+}
+.bTitle {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 2%;
+  /* background: green; */
+  padding: 1%;
+  color: rgb(24, 22, 22);
+}
+
+h2 {
+  /* font-size: 2vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2%;
+}
+
+/***************************************/
+
+.s-Search {
+  /* height: 300px; */
+  background-color: white;
+  border: 3px solid #1f1806;
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4% 5%;
+  border-radius: 5px;
+  /* position: absolute; */
+  /* top: 10%; */
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+  border: 5px solid rgb(103, 103, 117);
+  color: rgb(88, 50, 57);
+  flex-direction: column;
+  margin-top: 25%;
+}
+.s-Search > h2 {
+  text-align: center;
+}
+.s-Search > p {
+  padding: 1%;
+}
+
+/* .btn-shopping {
+  background-color: rgb(133, 93, 93);
+
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  margin-top: 5%;
+  margin-left: 3%;
+  padding: 1.5%;
+} */
+.s-Search > .btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.s-Search > .btns > button {
+  width: 30%;
+  padding: 1%;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.s-Search > .btns > button:nth-child(1):hover {
+  background-color: rgb(133, 93, 93);
+  color: white;
+  transition: 0.5s;
+}
+.s-Search > .btns > button:nth-child(2):hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.pop {
+  position: fixed;
+  top: 30%;
+  right: 30%;
+  bottom: 30%;
+  left: 30%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.pop > p {
+  color: white;
+  font-size: 2vw;
+}

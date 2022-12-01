@@ -1,5 +1,7 @@
 .containerHome p {
+    width: 100%;
     font-family: 'Raleway', sans-serif;
+    padding-top: 0;
 }
 
 .welcome-vid {
