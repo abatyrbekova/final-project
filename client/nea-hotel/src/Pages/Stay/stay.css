@@ -212,7 +212,9 @@
 
 .cards .card .card-text .card-text-inner h2 {
   /* font-size: 2vw; */
-  font-family: "Raleway", sans-serif;
+  /* Changes made by Erika.01-12-2022. */
+  font-family: "biorhyme", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -238,11 +240,14 @@
   /* background-color: rgb(127, 178, 220); */
   /* background-color: rgb(133, 93, 93); */
   background-color: rgba(133, 93, 93, 0.4);
+  /* Changes made by Erika.01-12-2022. */
+  font-family: "biorhyme", sans-serif;
   font-size: 1rem;
+  font-weight: 600;
   border: none;
   outline: none;
   color: antiquewhite;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 5%;
 }
 
