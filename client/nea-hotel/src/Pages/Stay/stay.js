@@ -31,9 +31,7 @@ export default function Stay() {
     <div className="container">
       {/* {console.log(rooms.length())} */}
       <div className="stay-img">
-        <h3>Magic Nights in a glass igloo</h3>
-        <h3>Under the Arctic Sky</h3>
-
+        <h3>Magic Nights under the sky</h3>
         {/* <img
           src="./img/rooms/igloo-interior-panoramic-view-autom-Sunset.jpg"
           alt="background-imGlass-age"

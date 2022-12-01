@@ -117,8 +117,14 @@
 }
 
 .stay-img {
+     /*radial-gradient added to the picture background by Erika.01-12-2022. */
   width: 100%;
-  background-image: url(./img/landingroom.jpg);
+  background-image: radial-gradient(
+    ellipse at center,
+    rgba(19, 57, 94, 0.6) 0%,
+    rgba(213, 220, 226, 0) 69%,
+    rgba(255, 255, 255, 0.3) 84%)
+  , url(./img/landingroom.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,12 +137,22 @@
 }
 
 .stay-img h3 {
-  font-size: 2rem;
+  /*Changes made by Erika.01-12-2022. */
+  align-items: center;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  font-family: "biorhyme", sans-serif;
+  /* font-size: 2rem;
   font-weight: 600;
   color: rgb(133, 93, 93);
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4); */
 }
 
 .cards {
@@ -220,8 +236,9 @@
 .btn-card {
   padding: 3%;
   /* background-color: rgb(127, 178, 220); */
-  background-color: rgb(133, 93, 93);
-
+  /* background-color: rgb(133, 93, 93); */
+  background-color: rgba(133, 93, 93, 0.4);
+  font-size: 1rem;
   border: none;
   outline: none;
   color: antiquewhite;
@@ -230,6 +247,9 @@
 }
 
 .btn-card:hover {
-  font-size: 2rem;
-  cursor: mouse;
-}
+  /*Changes made by Erika.01-12-2022. */
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  /* font-size: 2rem;
+  cursor: mouse;*/
+} 
