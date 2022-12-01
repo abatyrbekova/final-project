@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at center,rgba(19,57,94,0.6) 0%,rgba(213,220,226,0) 69%,rgba(255,255,255,0) 84%); 
 }
 
 code {
@@ -22,7 +23,6 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
 }
 
 .nav {
@@ -31,7 +31,7 @@ code {
   align-items: center;
   padding: 0.3% 0.5%;
   color: #fff;
-  font-family: biorhyme,serif;
+  font-family: "biorhyme", serif;
   text-decoration: none;
   font-weight: 700;
   /* text-transform: uppercase; */
@@ -73,7 +73,6 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 200px;
-
 }
 
 .navbar__auth button {
@@ -91,7 +90,6 @@ code {
   color: white;
   /* text-transform: uppercase; */
   font-family: "biorhyme", serif;
- 
 }
 
 .navbar__auth button:hover {

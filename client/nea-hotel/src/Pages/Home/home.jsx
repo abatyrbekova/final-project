@@ -9,7 +9,8 @@ export default function Home() {
         <video
           src={video}
           autoPlay={true}
-          controls={true}
+          controls={false}
+          muted={true}
           className="welcome-vid"
         />
         <div className="welcome-text">
