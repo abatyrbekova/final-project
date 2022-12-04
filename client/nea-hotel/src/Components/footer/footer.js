@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+
+// Import css styling
 import "./footer.css";
+
+// Import logo
 import FooterLogoLight from "./img/nea_hotel_light_logo.png";
 import FooterLogoDark from "./img/nea_hotel_dark_logo.png";
+
+// Import react icons
 import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 
@@ -34,7 +40,8 @@ export default function Footer() {
         <NavLink to="/">
           <img
             className="footer-logo"
-            src={FooterLogoLight} alt="logo"
+            src={FooterLogoLight}
+            alt="logo"
             onMouseOver={(e) => (e.target.src = FooterLogoDark)}
             onMouseOut={(e) => (e.target.src = FooterLogoLight)}
           />
