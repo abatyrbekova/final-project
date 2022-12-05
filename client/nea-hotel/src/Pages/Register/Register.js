@@ -53,7 +53,7 @@ function Register() {
         </div>
 
         <div class="contact-form">
-          <label className="form-text">last name</label>
+          <label className="form-text">Last name</label>
           <input
             className="form-text"
             placeholder="please enter your last name"

@@ -110,7 +110,7 @@ h2 {
   transition: 0.5s;
 }
 .s-Search > .btns > button:nth-child(2):hover {
-  background-color: black;
+  background-color: rgb(133, 93, 93);
   color: white;
   transition: 0.5s;
 }
