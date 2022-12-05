@@ -61,7 +61,7 @@
 .bSearch {
   height: 50px;
   background-color: white;
-  border: 3px solid #1f1806;
+  border: 1px solid #1f1806;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -192,7 +192,7 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
-  border: solid black 2px;
+  border: solid black 1px;
   margin-top: 2rem;
   color: rgb(133, 93, 93);
   background-color: rgba(248, 230, 230, 0.4);
