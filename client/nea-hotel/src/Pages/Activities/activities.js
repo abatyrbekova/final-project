@@ -22,28 +22,28 @@ export default function Activites() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="activity-container">
       {/* {console.log(activities.length())} */}
-      <div className="landing-img">
+      <div className="activity-landing-img">
         <h3>Active Holidays throughout the season</h3>
 
         {/* <img src="/img/landing.jpg" alt="background-image" /> */}
       </div>
 
-      <div className="cards">
+      <div className="activity-cards">
         {activities &&
           activities.map((item, index) => (
             // console.log(item.image);
 
-            <div className="card" key={index}>
-              <div className="card-img ">
-                <a>
+            <div className="activity-card" key={index}>
+              <div className="activity-card-img ">
+                <a id="activity">
                   {/* <img src="/img/activity/activity1.jpg" alt="img" /> */}
                   <img src={item.image} alt="img" />
                 </a>
               </div>
-              <div className="card-text">
-                <div className="card-text-inner">
+              <div className="activity-card-text">
+                <div className="activity-card-text-inner">
                   <h2>{item.name}</h2>
                   <p>{item.description}</p>
                 </div>

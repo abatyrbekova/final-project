@@ -21,40 +21,32 @@ export default function Stay() {
   let handleBook = () => {
     navigate("/booking");
   };
-  //test
+
   // fetch data from server
   useEffect(() => {
     fetchData().then((data) => setRooms(data));
   }, []);
 
   return (
-    <div className="container">
-      {/* {console.log(rooms.length())} */}
+    <div className="stay-container">
       <div className="stay-img">
         <h3>Magic Nights under the sky</h3>
-        {/* <img
-          src="./img/rooms/igloo-interior-panoramic-view-autom-Sunset.jpg"
-          alt="background-imGlass-age"
-        /> */}
       </div>
 
-      <div className="cards">
+      <div className="stay-cards">
         {rooms &&
           rooms.map((item, index) => (
-            // console.log(item.image);
-
-            <div className="card" key={index}>
-              <div className="card-img ">
-                <a>
-                  {/* <img src="/img/activity/activity1.jpg" alt="img" /> */}
+            <div className="stay-card" key={index}>
+              <div className="stay-card-img ">
+                <a id="stay">
                   <img src={item.Picture} alt="img" />
                 </a>
               </div>
-              <div className="card-text">
-                <div className="card-text-inner">
+              <div className="stay-card-text">
+                <div className="stay-card-text-inner">
                   <h2>{item.name}</h2>
                   <p>{item.description}</p>
-                  <button onClick={handleBook} className="btn-card">
+                  <button onClick={handleBook} className="btn-stay-card">
                     book now
                   </button>
                 </div>
