@@ -50,7 +50,7 @@
     justify-content: center;
     text-align: center;
    
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     /* color: rgb(133, 93, 93); */
     color: white;
@@ -106,7 +106,7 @@
   } */
 
   /* .cardsMenu .card:nth-child(odd) .card-menu-text {
-      justify-content: flex-start;
+      justify-content: flex-sta934rt;
   } */
 
   .cardsMenu .cardMenu .card-menu-text {

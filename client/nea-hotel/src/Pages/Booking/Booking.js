@@ -1,34 +1,22 @@
 import React, { useEffect } from "react";
-//import { faCalendarDays, faPerson } from "@fortawesome/free-solid-svg-icons";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./booking.css";
 import { DateRange } from "react-date-range";
 import { useContext, useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-//import { useNavigate } from "react-router-dom";
-//import { useLocation } from "react-router-dom";
+
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import the context
+
 import { Context } from "../../Components/context/searchContext";
 
 function Booking({ type }) {
   let navigate = useNavigate();
 
   const { date, setDate } = useContext(Context);
-  console.log("🚀 ~ file: Booking.js ~ line 21 ~ Booking ~ date", date);
+  // console.log("🚀 ~ file: Booking.js ~ line 21 ~ Booking ~ date", date);
 
-  // console.log(
-  //   "🚀 ~ file: Booking.js ~ line 23 ~ Booking ~ dateObj",
-  //   arrayDate.slice(1, 5)
-  // );
-  // console.log);
-  // console.log(
-  //   "The difference is: ",
-  //   dateObj.endDate.slice(9, 10) - dateObj.startDate.slice(9, 10)
-  // );
   const { roomCart, setRoomCart } = useContext(Context);
 
   const [openOptions, setOpenOptions] = useState(false);
@@ -84,7 +72,16 @@ function Booking({ type }) {
   };
 
   const [RESET_SEARCH, setReset_Search] = useState(true);
-  // console.log(rooms);
+
+  // 5-12-2022
+
+  // const handelDate = (item) => {
+  //   setDate([item.selection]);
+  //   console.log("item.selection:", item.selection);
+  //   if (!date[0].startDate === "" && !date[0].endDate === "") {
+  //     setOpenDate(false);
+  //   }
+  // };
 
   return (
     <div className="main-container-booking">
@@ -94,7 +91,7 @@ function Booking({ type }) {
             <h1 className="bTitle"></h1>
 
             <div className="bSearch">
-              <div className="bSearchItem">
+              <div className="bSearchItem" id="date">
                 {/*  <FontAwesomeIcon icon={faCalendarDays} className="bIcon" /> */}
                 <span
                   onClick={() => setOpenDate(!openDate)}
@@ -107,6 +104,7 @@ function Booking({ type }) {
                   <DateRange
                     editableDateInputs={true}
                     onChange={(item) => setDate([item.selection])}
+                    // onChange={handelDate}
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
@@ -202,7 +200,7 @@ function Booking({ type }) {
               rooms.map((item, index) => (
                 <div className="r-card" key={item._id}>
                   <div className="r-card-img ">
-                    <a>
+                    <a id="book">
                       <img src={item.Picture} alt="img" />
                     </a>
                   </div>
