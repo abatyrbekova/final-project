@@ -7,7 +7,6 @@ import { Context } from "../../Components/context/searchContext";
 import { useState } from "react";
 
 function ShoppingCart() {
-  /*const { count, setCount } = useContext(Context);*/
   let navigate = useNavigate();
   const { date, setDate } = useContext(Context);
   let [showPop, setShowPop] = useState(false);
@@ -30,8 +29,6 @@ function ShoppingCart() {
 
   // display the status of booking
   const handelClick = () => {
-    // setCount(count + 1);
-    // console.log("count =", count);
     setShowPop(true);
     setTimeout(() => setShowPop(false), 3000);
     // navigate to search page after 3 seconds
@@ -44,13 +41,13 @@ function ShoppingCart() {
           <p>Your booking successfully done</p>
         </div>
       )}
-      <div className="main-container">
-        <div className="big-container">
-          <div className="bContainer">
+      <div className="main-container-shopping">
+        <div className="big-container-shopping">
+          <div className="bContainer-shopping">
             {/* <h1 className="bTitle">Your shopping cart</h1> */}
 
             <div className="s-Search">
-              <h2>Your Shopping Cart</h2>
+              <h2>Your Booking Confirmation</h2>
               <p>
                 <b>Room Name: {roomCart.name}</b>
               </p>

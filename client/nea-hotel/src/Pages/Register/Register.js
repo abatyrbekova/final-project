@@ -33,40 +33,40 @@ function Register() {
   // }, []);
 
   return (
-    <div className="containerContact">
-      <div className="contact-img">
+    <div className="r-containerContact">
+      <div className="r-contact-img">
         <h3>Please fill in your Personal Information</h3>
       </div>
 
-      <form className="containerContact-form " onSubmit={handleSave}>
-        <div class="contact-form">
-          <label className="form-text" for="name">
+      <form className="r-containerContact-form " onSubmit={handleSave}>
+        <div class="r-contact-form">
+          <label className="r-form-text r-label" for="name">
             Name
           </label>
 
           <input
-            className="form-text"
+            className="r-form-text"
             placeholder="please enter your first name"
             value={data.firstName}
             onChange={(e) => setData({ ...data, firstName: e.target.value })}
           />
         </div>
 
-        <div class="contact-form">
-          <label className="form-text">last name</label>
+        <div class="r-contact-form">
+          <label className="r-form-text r-label">last name</label>
           <input
-            className="form-text"
+            className="r-form-text"
             placeholder="please enter your last name"
             value={data.lastName}
             onChange={(e) => setData({ ...data, lastName: e.target.value })}
           />
         </div>
         {/* <!-- email --> */}
-        <div class="contact-form">
-          <label className="form-text">Email</label>
+        <div class="r-contact-form">
+          <label className="r-form-text r-label">Email</label>
 
           <input
-            className="form-text"
+            className="r-form-text"
             placeholder="please enter your email"
             value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
@@ -75,16 +75,16 @@ function Register() {
 
         {/* Address */}
 
-        <div class="contact-form">
-          <label className="form-text">Address</label>
+        <div class="r-contact-form">
+          <label className="r-form-text r-label">Address</label>
           <input
-            className="form-text"
+            className="r-form-text"
             placeholder="please enter your address"
             value={data.address}
             onChange={(e) => setData({ ...data, address: e.target.value })}
           />
         </div>
-        <button className="btn-submit">Continue</button>
+        <button className="r-btn-submit">Continue</button>
       </form>
     </div>
   );
