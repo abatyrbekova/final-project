@@ -54,8 +54,8 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
-  border: solid black 2px;
   margin-top: 2%;
+  border: solid black 1px;
   color: rgb(133, 93, 93);
   background-color: rgba(248, 230, 230, 0.4);
 

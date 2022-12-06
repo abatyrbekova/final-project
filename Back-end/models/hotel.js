@@ -17,7 +17,7 @@ const hotelSchema = new Schema({
     type: String,
   },
   priceRange: {
-    type: Number,
+    type: String,
     required: true,
   },
   rating: {
