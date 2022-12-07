@@ -31,8 +31,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: 400;
-  font-size: 3vw;
+  font-weight: 250;
+  font-size: 2.7vw;
 
   color: white;
   margin-bottom: 1rem;
@@ -74,7 +74,8 @@
   font-size: 1.3vw;
 }
 
-input {
+/* 6-12 */
+.r-contact-form > input {
   width: 100%;
   padding: 1%;
   border: none;
@@ -94,6 +95,8 @@ input {
   margin: 2% 0;
   cursor: pointer;
 }
+
+/* 6-12 */
 
 @media only screen and (max-width: 420px) {
   .r-label {
