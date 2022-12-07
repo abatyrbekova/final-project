@@ -106,17 +106,16 @@
 
 .stay-cards .stay-card .stay-card-text .stay-card-text-inner h2 {
   font-family: "biorhyme", sans-serif;
-
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .stay-cards .stay-card .stay-card-text .stay-card-text-inner p {
   /* font-size: 1.5vw; */
   font-family: "Raleway", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: 400;
-  padding-top: 1%;
+  padding-top: 1rem;
 }
 
 /* -----------------this part is added  -4-12-2022-------------- */
