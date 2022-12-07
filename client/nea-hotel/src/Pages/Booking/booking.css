@@ -159,6 +159,8 @@
   width: 100%;
   height: 100%;
   color: white;
+  font-family: "biorhyme", sans-serif;
+  font-weight: 600;
 }
 .headerBtn:hover {
   transform: scale(1.1);
