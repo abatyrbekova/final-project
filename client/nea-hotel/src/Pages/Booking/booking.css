@@ -1,5 +1,10 @@
 .main-container-booking {
-  background-image: url(./img/landing.jpg);
+  background-image: radial-gradient(
+    ellipse at center,
+    rgba(19, 57, 94, 0.6) 0%,
+    rgba(213, 220, 226, 0) 69%,
+    rgba(255, 255, 255, 0.3) 84%
+  ), url(./img/landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;

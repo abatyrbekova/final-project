@@ -31,8 +31,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: 400;
-  font-size: 3vw;
+  font-weight: 250;
+  font-size: 2.4rem;
 
   color: white;
   margin-bottom: 1rem;
@@ -43,7 +43,7 @@
 
 .r-containerContact-form {
   align-self: center;
-  width: 50%;
+  width: 60%;
 
   margin-top: 4%;
   margin-bottom: 4%;
@@ -74,7 +74,8 @@
   font-size: 1.3vw;
 }
 
-input {
+/* 6-12 */
+.r-contact-form > input {
   width: 100%;
   padding: 1%;
   border: none;
@@ -83,17 +84,19 @@ input {
 
 .r-btn-submit {
   width: 100%;
-  padding: 2%;
-  font-family: biorhyme, sans-serif;
-  font-size: 1.5vw;
+  height: 2rem;
+  font-family: "biorhyme", sans-serif;
+  font-size: 1.3rem;
   font-weight: 300;
   background-color: rgba(133, 93, 93, 0.4);
   color: black;
   border: none;
   border-radius: 5px;
-  margin: 2% 0;
+  margin: 2rem 0;
   cursor: pointer;
 }
+
+/* 6-12 */
 
 @media only screen and (max-width: 420px) {
   .r-label {

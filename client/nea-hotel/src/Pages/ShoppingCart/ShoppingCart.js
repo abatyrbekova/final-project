@@ -49,24 +49,32 @@ function ShoppingCart() {
             <div className="s-Search">
               <h2>Your Booking Confirmation</h2>
               <p>
-                <b>Room Name: {roomCart.name}</b>
+                {/* <b>Room Name: {roomCart.name}</b> */}
+                Room Name: {roomCart.name}
               </p>
               <p>
-                <b>Check in: {String(date[0].startDate).slice(0, 11)}</b>
+                {/* <b>Check in: {String(date[0].startDate).slice(0, 11)}</b> */}
+                Check in: {String(date[0].startDate).slice(0, 11)}
               </p>
               <p>
-                <b>Check out: {String(date[0].endDate).slice(0, 11)} </b>
+                {/* <b>Check out: {String(date[0].endDate).slice(0, 11)} </b> */}
+                Check out: {String(date[0].endDate).slice(0, 11)}
               </p>
               <p>
-                <b>
+                {/* <b>
                   Total Price:{" "}
                   {roomCart.price
                     ? `${roomCart.price * calculateNights} Euro`
                     : null}{" "}
-                </b>
+                </b> */}
+                Total Price:{" "}
+                {roomCart.price
+                  ? `${roomCart.price * calculateNights} Euro`
+                  : null}{" "}
               </p>
               <p>
-                <b>Total Nights: {calculateNights} </b>
+                {/* <b>Total Nights: {calculateNights} </b> */}
+                Total Nights: {calculateNights}
               </p>
               <div className="btns">
                 <button onClick={() => navigate("/booking")}>Go back</button>

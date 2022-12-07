@@ -14,7 +14,7 @@
   width: 100%;
   background-image: radial-gradient(
       ellipse at center,
-      rgba(19, 57, 94, 0.6) 0%,
+      rgba(9, 39, 70, 0.6) 0%,
       rgba(213, 220, 226, 0) 69%,
       rgba(255, 255, 255, 0.3) 84%
     ),
@@ -36,8 +36,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 4.5vw;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 250;
   color: white;
   font-family: "biorhyme", sans-serif;
 }
@@ -58,8 +58,6 @@
   border: solid black 1px;
   color: rgb(133, 93, 93);
   background-color: rgba(248, 230, 230, 0.4);
-
-  /* border: 2px solid red; */
 }
 
 /* -------------------------------------------- */

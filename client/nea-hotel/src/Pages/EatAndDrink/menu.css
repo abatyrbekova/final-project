@@ -1,4 +1,147 @@
-@media only screen and (min-width: 480px) and (max-width: 768px){
+@media only screen and (min-width:320px){
+  .containerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tableIgloosView-img {
+    width: 100%;
+    /* height: 80%;  */
+    background-image: radial-gradient(
+        ellipse at center,
+        rgba(19, 57, 94, 0.6) 0%,
+        rgba(213, 220, 226, 0) 69%,
+        rgba(255, 255, 255, 0.3) 84%
+      ),
+      url(./img/tableIgloosView.jpg);
+    /* background-size: cover; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+  }
+
+  /* .tableIglooView-img-h3 {
+    width: 60vw;
+    height: 20vh;
+    border: solid red 2px;
+    background: radial-gradient(ellipse at center,rgba(19,57,94,0.6) 0%,rgba(213,220,226,0) 69%,rgba(255,255,255,0) 84%);
+  } */
+
+  .tableIgloosView-img h3 {
+    /* width: 100%; */
+    /* height: 80%; */
+    align-items: center;
+    padding-bottom: 1rem;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    text-align: center;
+   
+    font-size: 15px;
+    font-weight: 400;
+    /* color: rgb(133, 93, 93); */
+    color: white;
+    /* margin-bottom: 1rem; */
+    font-family: "biorhyme", sans-serif;
+    /* background-color: rgba(232, 244, 247, 0.5); */
+    /* background-color: rgba(185, 180, 180, 0.4); */
+    /* background: radial-gradient(ellipse at center,rgba(19,57,94,0.6) 0%,rgba(213,220,226,0) 69%,rgba(255,255,255,0) 84%);  */
+  }
+
+  .cardsMenu {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  .cardsMenu .cardMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* border: solid black 2px; */
+    margin-top: 1rem;
+    color: rgb(133, 93, 93);
+    background-color: rgba(248, 230, 230, 0.4);
+  }
+
+  /* .cardsMenu .cardMenu:nth-child() .card-menu-img {
+      justify-content: flex-start;
+  } */
+
+  .cardsMenu .cardMenu .card-menu-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+  }
+
+  .cardsMenu .cardMenu .card-menu-img a {
+    width: 100%;
+    display: flex;
+  }
+
+  .cardsMenu .cardMenu .card-menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* .cardsMenu .cardMenu .card-menu-img img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  } */
+
+  /* .cardsMenu .card:nth-child(odd) .card-menu-text {
+      justify-content: flex-sta934rt;
+  } */
+
+  .cardsMenu .cardMenu .card-menu-text {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+  }
+
+  .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner {
+    width: 73%;
+    padding: 3%;
+  }
+
+  .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner h2 {
+    /* font-size: 2vw; */
+    font-family: "biorhyme", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner p {
+    /* font-size: 1.5vw; */
+    font-family: "raleway", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding-top: 1rem;
+  }
+
+  .cardsMenu .cardMenu .card-menu-text .card-menu-text-inner h3 {
+    /* font-size: 1.5vw; */
+    font-family: "Raleway", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding-top: 1rem;
+  }
+}
+@media only screen and (min-width: 481px) {
   .containerMenu {
     display: flex;
     flex-direction: column;
@@ -25,7 +168,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 13%;
+    padding: 17%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +193,8 @@
     justify-content: center;
     text-align: center;
    
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     /* color: rgb(133, 93, 93); */
     color: white;
     /* margin-bottom: 1rem; */
@@ -145,7 +288,7 @@
 } 
 
 /* Media Query for Middle size screens */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px)  {
   .containerMenu {
     display: flex;
     flex-direction: column;
@@ -157,8 +300,8 @@
   }
 
   .tableIgloosView-img {
-    /* width: 100%;
-    height: 80%; */
+    width: 100%;
+    /*height: 80%; */
     background-image: radial-gradient(
         ellipse at center,
         rgba(19, 57, 94, 0.6) 0%,
@@ -166,11 +309,10 @@
         rgba(255, 255, 255, 0.3) 84%
       ),
       url(./img/tableIgloosView.jpg);
-    /* background-size: cover; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 14%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,8 +337,8 @@
     justify-content: center;
     text-align: center;
    
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
     /* color: rgb(133, 93, 93); */
     color: white;
     /* margin-bottom: 1rem; */
@@ -290,7 +432,7 @@
 }
 
 /* Media Query for Big screens */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 
   .containerMenu {
     display: flex;
@@ -305,8 +447,8 @@
   }
 
   .tableIgloosView-img {
-    /* width: 100%;
-    height: 80%; */
+    width: 100%;
+    /*height: 80%; */
     background-image: radial-gradient(
         ellipse at center,
         rgba(19, 57, 94, 0.6) 0%,
@@ -341,7 +483,7 @@
     /* border: 2px solid red; */
     justify-content: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 400;
     /* color: rgb(133, 93, 93); */
     color: white;
