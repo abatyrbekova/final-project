@@ -126,12 +126,18 @@ export default function Home() {
               <p>{item.description}</p>
               <br></br>
               <p>{item.amenities}</p>
-              <br></br>
-              <p>{item.priceRange}</p>
             </div>
           ))}
       </div>
       <ImageGallery items={images} />
+      <div className="about-container">
+        {hotel &&
+          hotel.map((item, index) => (
+            <div className="about-info" key={index}>
+              <p>{item.priceRange}</p>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
