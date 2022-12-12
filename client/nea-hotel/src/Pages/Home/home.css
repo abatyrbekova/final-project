@@ -1,8 +1,7 @@
 /* Import ImageGallery styling */
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-.containerHome p {
-  width: 100%;
+.containerHome {
   font-family: "Raleway", sans-serif;
   padding-top: 0;
 }
@@ -13,22 +12,23 @@
 
 .welcome-text {
   text-align: center;
-  transform: translateY(-280%);
+  position: relative;
+  top: -38vw;
+  margin-bottom: -14.1vw;
 }
 
 .welcome-text h1 {
-  font-size: 4rem;
+  font-size: 3.3vw;
   font-weight: 300;
   color: #fff;
   margin-top: 0;
   margin-bottom: 5px;
   font-family: "BioRhyme", serif;
   text-transform: uppercase;
-  line-height: 1.4;
 }
 
 .welcome-text h1 span {
-  font-size: 2.5rem;
+  font-size: 2.1vw;
   font-weight: 400;
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -39,16 +39,16 @@
 
 .welcome-text a {
   border: 1px solid #fff;
-  padding: 2px;
+  padding: 0.1vw;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1.5vw;
 }
 
 .learn-about-btn {
-  padding: 1.5rem;
+  padding: 1.2vw;
   background-color: rgba(82, 149, 166, 0.9);
   border: 0 solid #fff;
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   line-height: 1.2;
   color: #fff;
 }
@@ -56,17 +56,72 @@
 .about-container {
   background-color: rgba(248, 230, 230, 0.4);
   color: rgb(133, 93, 93);
-  font-size: 1.5rem;
-  margin-top: -270px;
+  font-size: 1.25vw;
 }
 
 .about-info {
-  width: 70%;
-  display: flex;
-  padding: 40px;
+  width: 75%;
+  text-align: center;
+  padding: 30px;
   margin: auto;
 }
 
 .about-info p {
   padding: 10px;
+}
+
+/* Media Query for Extra Small devices (phones, 320px-480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .welcome-text {
+    margin-bottom: -18.8vw;
+  }
+
+  .about-container {
+    font-size: 13px;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+}
+
+/* Media Query for Small devices (portrait tablets and large phones, 481px-768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .welcome-text {
+    margin-bottom: -16.3vw;
+  }
+
+  .about-container {
+    font-size: 2.2vw;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+}
+
+/* Media Query for Medium size devices (landscape tablets, 769px-1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .welcome-text {
+    margin-bottom: -14.6vw;
+  }
+
+  .about-container {
+    font-size: 1.8vw;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+}
+
+/* Media Query for Large size devices (desktops large screens, 1025px-1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .about-container {
+    font-size: 1.6vw;
+  }
+
+  .about-info {
+    width: 100%;
+  }
 }
