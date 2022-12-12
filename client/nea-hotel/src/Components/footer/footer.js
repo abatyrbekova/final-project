@@ -80,7 +80,9 @@ export default function Footer() {
           ))}
       </div>
       <div className="footer-sm">
-        <p>Other contact information:</p>
+        <p>
+          <b>Other contact information:</b>
+        </p>
         <ul className="footer-sm-links">
           <li className="footer-sm-link">
             <AiFillFacebook />
