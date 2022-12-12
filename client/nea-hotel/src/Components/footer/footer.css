@@ -1,9 +1,5 @@
 .footer-container {
-  /* background-color: rgba(82,149,166,.9); */
   background-color: rgb(185, 169, 169);
-  /* background-color: rgb(133, 93, 93); */
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -13,20 +9,13 @@
   font-size: 1rem;
 }
 
+.footer-logo {
+  width: 10.5vw;
+  height: auto;
+}
+
 .footer-nav-link {
   list-style: none;
-}
-
-.footer-nav-link a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-.footer-nav-link a:hover,
-.footer-sm li:hover {
-  color: #141313;
-  font-weight: 600;
 }
 
 .footer-contact-container h2 {
@@ -48,7 +37,83 @@
   list-style: none;
 }
 
-.footer-logo {
-  width: 200px;
-  height: auto;
+/* Hover effects for Book now button and links */
+
+.footer-nav-link a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.footer-nav-link a:hover,
+.footer-sm li:hover {
+  color: #141313;
+  font-weight: 600;
+}
+
+/* Media Query for Extra Small devices (phones, 320px-480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-container {
+    font-size: 13px;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links,
+  .footer-contact-container,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact-container h2 {
+    font-size: 15px;
+  }
+}
+
+/* Media Query for Small devices (portrait tablets and large phones, 481px-768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-container {
+    font-size: 13px;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links,
+  .footer-contact-container,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact-container h2 {
+    font-size: 15px;
+  }
+}
+
+/* Media Query for Medium size devices (landscape tablets, 769px-1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    font-size: 1.4vw;
+  }
+
+  .footer-logo {
+    width: 15vw;
+  }
+
+  .footer-contact-container h2 {
+    font-size: 1.8vw;
+  }
 }
