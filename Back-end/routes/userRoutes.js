@@ -16,15 +16,6 @@ router.get("/", getAllUsers);
 //Post Login
 router.post("/login", login);
 
-//POST::
-//http://localhost:3000/api/users/create
-//BODY
-// {
-// 	"firstName":"Brandon",
-// 	"lastName":"Test",
-// 	"userName":"Brandon123",
-// 	"email":"brandon.test@test.com"
-// }
 router.post("/register", registerUser);
 
 router.post("/create", createUser);

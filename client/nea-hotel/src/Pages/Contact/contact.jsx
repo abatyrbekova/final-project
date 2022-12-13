@@ -76,6 +76,7 @@ function Contact() {
           />
         </div>
 
+        {/* <!-- message/email content --> */}
         <div class="contact-form">
           <label className="form-text" for="email_body">
             Message

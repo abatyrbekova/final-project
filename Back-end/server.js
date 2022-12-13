@@ -8,7 +8,7 @@ import activityRoutes from "./routes/activityRoutes.js";
 import menuRoutes from "./routes/menuRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import messageRoutes from "./routes/messageRoutes.js";
-import orderRoutes from "./routes/orderRoutes.js"; // 21-11
+import orderRoutes from "./routes/orderRoutes.js";
 import configureJwtStrategy from "./passport-config.js";
 import hotelRoutes from "./routes/hotelRoutes.js";
 
@@ -19,14 +19,10 @@ const app = express();
 
 app.use(express.json());
 
-
-
 //connect to the database
 app.use(passport.initialize());
 //configure passport to use the jwt strategy
 configureJwtStrategy(passport);
-
-
 
 mongoose
   .connect(
@@ -40,10 +36,7 @@ mongoose
     console.log("🤨");
   });
 
-// app.post("/api/orders/create", (req, res) => {
-//   res.send("ok");
-// });
-app.use("/api/orders", orderRoutes); //21-11
+app.use("/api/orders", orderRoutes);
 app.use("/api/rooms", roomRoutes);
 app.use("/api/activities", activityRoutes);
 app.use("/api/menu", menuRoutes);
@@ -57,4 +50,3 @@ app.use("/img", express.static("./images"));
 app.listen(3001, (req, res) => {
   console.log("Server is running on port 3001");
 });
-

@@ -4,15 +4,9 @@ import Room from "../models/room.js";
 
 const router = express.Router();
 
-// router.use("*", (req, res, next) => {
-//   console.log(1232312313);
-//   next();
-// });
-
 //GET::list of all orders with ref id of the booked room
 //http://localhost:3001/api/orders/
 router.get("/", async (req, res) => {
-  // const orders = await Order.find().populate("room");
   const orders = await Order.find();
   return res.status(200).json(orders);
 });
@@ -29,7 +23,6 @@ router.get("/rooms", async (req, res) => {
 //http://localhost:3001/api/orders/byroom/633d47d1628fa92dfc021122 (! example room id)
 router.get("/byroom/:roomid", async (req, res) => {
   const orders = await Order.find({ bookedRoomId: req.params.roomid });
-  // const orders = await Order.find({ bookedRoomId: req.params.roomid }).populate("bookedRoomId");
   return res.status(200).json(orders);
 });
 
@@ -49,19 +42,6 @@ router.post("/create", async (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 });
-
-// export const getHotels = async (req, res, next) => {
-//   const { min, max, ...others } = req.query;
-//   try {
-//     const hotels = await Hotel.find({
-//       ...others,
-//       cheapestPrice: { $gt: min | 1, $lt: max || 999 },
-//     }).limit(req.query.limit);
-//     res.status(200).json(hotels);
-//   } catch (err) {
-//     next(err);
-//   }
-// };
 
 router.get(
   "/find",
@@ -96,8 +76,7 @@ router.get(
         adults: { $gte: adults },
         children: { $gte: children },
       });
-      // return res.status(200).json({ rooms, allOrders });
-      //return res.status(200).json(allOrders);
+
       return res.status(200).json(rooms);
     } catch (err) {
       next(err);
