@@ -8,7 +8,7 @@ import { useState } from "react";
 
 function ShoppingCart() {
   let navigate = useNavigate();
-  const { date, setDate } = useContext(Context);
+  const { date } = useContext(Context);
   let [showPop, setShowPop] = useState(false);
 
   // calculate how many nights will be booked
@@ -44,38 +44,18 @@ function ShoppingCart() {
       <div className="main-container-shopping">
         <div className="big-container-shopping">
           <div className="bContainer-shopping">
-            {/* <h1 className="bTitle">Your shopping cart</h1> */}
-
             <div className="s-Search">
               <h2>Your Booking Confirmation</h2>
+              <p>Room Name: {roomCart.name}</p>
+              <p>Check in: {String(date[0].startDate).slice(0, 11)}</p>
+              <p>Check out: {String(date[0].endDate).slice(0, 11)}</p>
               <p>
-                {/* <b>Room Name: {roomCart.name}</b> */}
-                Room Name: {roomCart.name}
-              </p>
-              <p>
-                {/* <b>Check in: {String(date[0].startDate).slice(0, 11)}</b> */}
-                Check in: {String(date[0].startDate).slice(0, 11)}
-              </p>
-              <p>
-                {/* <b>Check out: {String(date[0].endDate).slice(0, 11)} </b> */}
-                Check out: {String(date[0].endDate).slice(0, 11)}
-              </p>
-              <p>
-                {/* <b>
-                  Total Price:{" "}
-                  {roomCart.price
-                    ? `${roomCart.price * calculateNights} Euro`
-                    : null}{" "}
-                </b> */}
                 Total Price:{" "}
                 {roomCart.price
                   ? `${roomCart.price * calculateNights} Euro`
                   : null}{" "}
               </p>
-              <p>
-                {/* <b>Total Nights: {calculateNights} </b> */}
-                Total Nights: {calculateNights}
-              </p>
+              <p>Total Nights: {calculateNights}</p>
               <div className="btns">
                 <button onClick={() => navigate("/booking")}>Go back</button>
                 <button className="btn-shopping" onClick={handelClick}>

@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./register.css";
 
 function Register() {
-  // get all users and find in these users the one who match the signed in email => in this case it will bring u the object of the singed in
-
-  //let [users, setUsers] = useState([]);
-  // console.log("🚀 ~ file: Register.js ~ line 9 ~ Register ~ users", users);
   let navigate = useNavigate();
 
   const [data, setData] = useState({
@@ -27,10 +23,6 @@ function Register() {
       console.log("Error registering", error.message);
     }
   };
-
-  // useEffect(() => {
-  //   axios.get("/api/users").then((result) => setUsers(result.data));
-  // }, []);
 
   return (
     <div className="r-containerContact">
@@ -62,7 +54,7 @@ function Register() {
             onChange={(e) => setData({ ...data, lastName: e.target.value })}
           />
         </div>
-        {/* <!-- email --> */}
+
         <div class="r-contact-form">
           <label className="r-form-text r-label">Email</label>
 
@@ -73,8 +65,6 @@ function Register() {
             onChange={(e) => setData({ ...data, email: e.target.value })}
           />
         </div>
-
-        {/* Address */}
 
         <div class="r-contact-form">
           <label className="r-form-text r-label">Address</label>
