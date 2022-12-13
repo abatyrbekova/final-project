@@ -14,7 +14,7 @@
   width: 100%;
   background-image: radial-gradient(
       ellipse at center,
-      rgba(9, 39, 70, 0.6) 0%,
+      rgba(19, 57, 94, 0.6) 0%,
       rgba(213, 220, 226, 0) 69%,
       rgba(255, 255, 255, 0.3) 84%
     ),
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.7vw;
   font-weight: 250;
   color: white;
   font-family: "biorhyme", sans-serif;
@@ -73,7 +73,7 @@
   width: 60%;
   /* width: 100%; */
   display: flex;
-  overflow: hidden;
+
   /* border: 5px solid green; */
 }
 
@@ -108,16 +108,17 @@
   .activity-card-text-inner
   h2 {
   font-family: "biorhyme", sans-serif;
-  font-size: 1.5rem;
+
+  font-size: 1.5vw;
   font-weight: 600;
 }
 
 .activity-cards .activity-card .activity-card-text .activity-card-text-inner p {
   /* font-size: 1.5vw; */
-  font-family: "raleway", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5vw;
   font-weight: 400;
-  padding-top: 1rem;
+  padding-top: 1%;
 }
 
 /* -----------------this part is added  -4-12-2022-------------- */
