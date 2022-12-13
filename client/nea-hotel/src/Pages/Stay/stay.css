@@ -243,13 +243,11 @@
   }
 
   .stay-cards .stay-card .stay-card-text {
-    border: 2px solid yellow;
     width: 95%;
   }
 
   .stay-cards .stay-card .stay-card-text .stay-card-text-inner {
     width: 100%;
-    border: 2px solid blue;
   }
   .stay-cards .stay-card .stay-card-text .stay-card-text-inner h2 {
     font-size: 1.5vw;

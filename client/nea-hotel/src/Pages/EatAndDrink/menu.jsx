@@ -39,7 +39,7 @@ export default function Menu() {
                 {menu && menu.map((item, index) => (
                     <div className="cardMenu" key={index}>
                         <div className="card-menu-img">
-                            <a>
+                            <a href="#">
                                 <img src={item.images} alt="food" />
                             </a>
                         </div>

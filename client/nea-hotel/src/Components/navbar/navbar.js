@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+
+// Import css styling
 import "./navbar.css";
 
+// Import logo
 import NavbarLogo from "./img/nea_hotel_logo.jpg";
 import NavbarDarkLogo from "./img/nea_hotel_dark_logo.png";
+
+// Import react icons
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -25,11 +32,14 @@ export default function Navbar() {
 
   return (
     <nav className={isTransparent ? "nav" : "nav nav-scrolled"}>
-      <div className="navbar-logo">
-        <NavLink to="/">
-          { window.scrollY >= 90 ? <img className="logo" src={NavbarDarkLogo} alt="logo" /> : <img className="logo" src={NavbarLogo} alt="logo" />}
-        </NavLink>
-      </div>
+      <NavLink to="/">
+        {window.scrollY >= 90 ? (
+          <img className="logo" src={NavbarDarkLogo} alt="logo" />
+        ) : (
+          <img className="logo" src={NavbarLogo} alt="logo" />
+        )}
+      </NavLink>
+      <input type="checkbox" id="check" />
       <ul className="navbar-links">
         <li className="nav-link">
           <NavLink to="/stay">Accommodation</NavLink>
@@ -44,14 +54,17 @@ export default function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
-      <div className="navbar__auth">
-        <button
-          className="btn btn--primary"
-          onClick={() => navigate("/booking")}
-        >
-          Book Now
-        </button>
-      </div>
+      <button className="nav-btn" onClick={() => navigate("/booking")}>
+        Book Now
+      </button>
+      <label for="check">
+        <i className="humburgerMenu">
+          <GiHamburgerMenu />
+        </i>
+        <i className="cancel">
+          <MdClose />
+        </i>
+      </label>
     </nav>
   );
 }
