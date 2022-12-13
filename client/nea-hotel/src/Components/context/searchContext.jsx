@@ -4,8 +4,6 @@ import { createContext, useState } from "react";
 const Context = createContext(null);
 
 const ContextProvider = (props) => {
-  const [count, setCount] = useState(0);
-
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -27,8 +25,6 @@ const ContextProvider = (props) => {
   return (
     <Context.Provider
       value={{
-        count,
-        setCount,
         date,
         setDate,
         options,

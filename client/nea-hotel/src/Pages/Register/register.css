@@ -51,9 +51,7 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-
   background-color: rgba(248, 230, 230, 0.4);
-
   border: none;
 }
 .r-contact-form {
@@ -74,7 +72,6 @@
   font-size: 1.3vw;
 }
 
-/* 6-12 */
 .r-contact-form > input {
   width: 100%;
   padding: 1%;
@@ -96,8 +93,7 @@
   cursor: pointer;
 }
 
-/* 6-12 */
-
+/* media query */
 @media only screen and (max-width: 420px) {
   .r-label {
     height: 3vh;

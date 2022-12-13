@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./booking.css";
 import { DateRange } from "react-date-range";
 import { useContext, useState } from "react";
@@ -15,7 +15,6 @@ function Booking({ type }) {
   let navigate = useNavigate();
 
   const { date, setDate } = useContext(Context);
-  // console.log("🚀 ~ file: Booking.js ~ line 21 ~ Booking ~ date", date);
 
   const { roomCart, setRoomCart } = useContext(Context);
 
@@ -55,14 +54,10 @@ function Booking({ type }) {
 
   const handelSearch = () => {
     fetchData();
-    //console.log(rooms);
   };
 
   const handleRegister = (id) => {
-    //console.log("The id of the booked room is ", id);
     const result = rooms.filter((item) => item._id === id);
-    console.log("=================================", result[0]);
-    //console.log("hello from handelRegister , your chosen room is :", result);
     setRoomCart(result[0]);
     console.log(
       "hello from handelRegister, SetRoomCart is equal to :",
@@ -71,17 +66,7 @@ function Booking({ type }) {
     navigate("/register");
   };
 
-  const [RESET_SEARCH, setReset_Search] = useState(true);
-
-  // 5-12-2022
-
-  // const handelDate = (item) => {
-  //   setDate([item.selection]);
-  //   console.log("item.selection:", item.selection);
-  //   if (!date[0].startDate === "" && !date[0].endDate === "") {
-  //     setOpenDate(false);
-  //   }
-  // };
+  const [RESET_SEARCH] = useState(true);
 
   return (
     <div className="main-container-booking">
@@ -92,7 +77,6 @@ function Booking({ type }) {
 
             <div className="bSearch">
               <div className="bSearchItem" id="date">
-                {/*  <FontAwesomeIcon icon={faCalendarDays} className="bIcon" /> */}
                 <span
                   onClick={() => setOpenDate(!openDate)}
                   className="bSearchText"
@@ -104,7 +88,6 @@ function Booking({ type }) {
                   <DateRange
                     editableDateInputs={true}
                     onChange={(item) => setDate([item.selection])}
-                    // onChange={handelDate}
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
@@ -113,8 +96,6 @@ function Booking({ type }) {
                 )}
               </div>
               <div className="bSearchItem adults-children">
-                {" "}
-                {/*<FontAwesomeIcon icon={faPerson} className="bIcon" /> */}
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
                   className="bSearchText"
@@ -215,7 +196,6 @@ function Booking({ type }) {
                         <b className="bold-text">Amenities: </b>
                         {item.amenities}
                       </p>
-                      {/* <p>{item.description}</p> */}
                       <p>
                         <b className="bold-text">Adults:</b> {item.adults}
                       </p>

@@ -60,29 +60,24 @@
   background-color: rgba(248, 230, 230, 0.4);
 }
 
-/* -------------------------------------------- */
 .activity-cards .activity-card .activity-card-img {
   display: flex;
 
   justify-content: flex-end;
   width: 50%;
-  /* border: 5px solid blue; */
 }
 
 .activity-cards .activity-card .activity-card-img a {
   width: 60%;
-  /* width: 100%; */
+
   display: flex;
   overflow: hidden;
-  /* border: 5px solid green; */
 }
 
-/* ------------------------------------------------------------- */
 .activity-cards .activity-card .activity-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* contain */
 }
 
 .activity-cards .activity-card .activity-card-img img:hover {
@@ -94,7 +89,6 @@
   display: flex;
   justify-content: flex-end;
   width: 50%;
-  /* border: 2px solid yellow; */
 }
 
 .activity-cards .activity-card .activity-card-text .activity-card-text-inner {
@@ -113,14 +107,11 @@
 }
 
 .activity-cards .activity-card .activity-card-text .activity-card-text-inner p {
-  /* font-size: 1.5vw; */
   font-family: "raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   padding-top: 1rem;
 }
-
-/* -----------------this part is added  -4-12-2022-------------- */
 
 .btn-activity-card {
   padding: 3%;
@@ -140,48 +131,7 @@
   transition: all 0.5s ease;
 }
 
-/* 
--------------------------------------media query------------------------------- */
-/* @media only screen and (max-width: 800px) {
-  .activity-cards .activity-card {
-    width: 100%;
-    flex-direction: column;
-  }
-  .activity-cards .activity-card .activity-card-img {
-    width: 100%;
-  }
-  .activity-card .activity-card-img #activity {
-    width: 100%;
-  }
-
-  .activity-cards .activity-card .activity-card-text {
-    width: 100%;
-  }
-
-  .activity-cards .activity-card .activity-card-text .activity-card-text-inner {
-    width: 100%;
-  }
-  .activity-cards
-    .activity-card
-    .activity-card-text
-    .activity-card-text-inner
-    h2 {
-    font-size: 2vw;
-  }
-  .activity-cards
-    .activity-card
-    .activity-card-text
-    .activity-card-text-inner
-    p {
-    font-size: 1.8vw;
-  }
-  .btn-activity-card {
-    padding: 2%;
-    font-size: 1.8vw;
-  }
-} */
-/*--------------------media query-------------------         13-12 --------------*/
-
+/*--------------------media query-------------------   */
 @media only screen and (max-width: 375px) {
   .activity-landing-img h3 {
     align-items: center;

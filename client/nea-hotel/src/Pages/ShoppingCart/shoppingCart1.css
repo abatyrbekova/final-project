@@ -38,15 +38,12 @@
   color: rgb(24, 22, 22);
 }
 
-/* 7-12 */
 .s-Search > h2 {
   font-size: 2vw;
   font-family: "Raleway", sans-serif;
   font-weight: 250;
   padding: 2%;
 }
-
-/***************************************/
 
 .s-Search {
   background-color: white;
@@ -111,11 +108,10 @@
   font-size: 1.5vw;
 }
 @media only screen and (max-width: 800px) {
-  /* 6-12 */
   .s-Search > h2 {
     font-size: 3.5vw;
   }
-  /* 6-12 */
+
   .s-Search p {
     font-size: 2vw;
   }
@@ -124,7 +120,6 @@
   }
 }
 
-/* 7-12 */
 .s-Search p {
   font-size: 1.5vw;
   font-weight: 250;
