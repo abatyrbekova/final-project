@@ -1,3 +1,4 @@
+/* Meida Query for small mobile devices */
 @media only screen and (min-width: 320px) {
     .containerContact {
         display: flex;
@@ -90,6 +91,8 @@
         cursor: pointer;
     }
 }
+
+/* Media Query for medium mobile devices */
 @media only screen and (min-width: 481px)  {
     .containerContact {
         display: flex;
@@ -129,7 +132,6 @@
         font-size: 20px;
         font-weight: 400;
         color: white;
-        /* margin-bottom: 1rem;  */
         font-family: "biorhyme", sans-serif;
         padding-bottom: 10%;
     }
@@ -215,7 +217,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* padding-top: 20%; */
     }
 
     .contact-img h3 {
@@ -225,7 +226,6 @@
         font-size: 25px;
         font-weight: 400;
         color: white;
-        /* margin-bottom: 1rem; */
         font-family: "biorhyme", sans-serif;
         padding-bottom: 1rem;
     }
