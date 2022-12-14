@@ -32,9 +32,9 @@ export default function Activites() {
           activities.map((item, index) => (
             <div className="activity-card" key={index}>
               <div className="activity-card-img ">
-                <a id="activity">
+                <div id="activity">
                   <img src={item.image} alt="img" />
-                </a>
+                </div>
               </div>
               <div className="activity-card-text">
                 <div className="activity-card-text-inner">

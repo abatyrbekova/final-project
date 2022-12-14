@@ -66,8 +66,8 @@
   justify-content: flex-end;
   width: 50%;
 }
-
-.activity-cards .activity-card .activity-card-img a {
+/*  */
+.activity-cards .activity-card .activity-card-img div {
   width: 60%;
 
   display: flex;

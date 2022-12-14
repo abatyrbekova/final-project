@@ -38,9 +38,9 @@ export default function Stay() {
           rooms.map((item, index) => (
             <div className="stay-card" key={index}>
               <div className="stay-card-img ">
-                <a id="stay">
+                <div id="stay">
                   <img src={item.Picture} alt="img" />
-                </a>
+                </div>
               </div>
               <div className="stay-card-text">
                 <div className="stay-card-text-inner">
