@@ -1,5 +1,5 @@
 /* Media Query for small mobile devices */
-@media only screen and (min-width:320px){
+@media only screen and (min-width: 320px) {
   .containerMenu {
     display: flex;
     flex-direction: column;
@@ -177,6 +177,7 @@
   .cardsMenu .cardMenu .card-menu-img div {
     width: 100%;
     display: flex;
+    overflow: hidden;
   }
 
   .cardsMenu .cardMenu .card-menu-img img {
@@ -215,10 +216,10 @@
     font-weight: 400;
     padding-top: 1rem;
   }
-} 
+}
 
 /* Media Query for Middle size screens */
-@media only screen and (min-width: 769px)  {
+@media only screen and (min-width: 769px) {
   .containerMenu {
     display: flex;
     flex-direction: column;
@@ -254,7 +255,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-   
+
     font-size: 25px;
     font-weight: 400;
     color: white;
@@ -335,7 +336,6 @@
 
 /* Media Query for Big screens */
 @media screen and (min-width: 1025px) {
-
   .containerMenu {
     display: flex;
     flex-direction: column;

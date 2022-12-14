@@ -181,9 +181,9 @@ function Booking({ type }) {
               rooms.map((item, index) => (
                 <div className="r-card" key={item._id}>
                   <div className="r-card-img ">
-                    <a id="book">
+                    <div id="book">
                       <img src={item.Picture} alt="img" />
-                    </a>
+                    </div>
                   </div>
                   <div className="r-card-text">
                     <div className="r-card-text-inner">

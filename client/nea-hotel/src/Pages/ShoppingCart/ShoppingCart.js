@@ -21,7 +21,7 @@ function ShoppingCart() {
 
   let calculateNights = differenceInDays;
 
-  const { roomCart, setRoomCart } = useContext(Context);
+  const { roomCart } = useContext(Context);
   console.log(
     "🚀 ~ file: ShoppingCart.js ~ line 13 ~ ShoppingCart ~ roomCart",
     roomCart
