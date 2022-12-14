@@ -65,7 +65,7 @@
     width: 150px;
   }
 
-  .cardsMenu .cardMenu .card-menu-img a {
+  .cardsMenu .cardMenu .card-menu-img div {
     width: 100%;
     display: flex;
   }
@@ -174,7 +174,7 @@
     width: 150px;
   }
 
-  .cardsMenu .cardMenu .card-menu-img a {
+  .cardsMenu .cardMenu .card-menu-img div {
     width: 100%;
     display: flex;
     overflow: hidden;
@@ -274,7 +274,7 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
-    border: solid black 2px;
+    border: solid black 1px;
     margin-top: 2rem;
     color: rgb(133, 93, 93);
     background-color: rgba(248, 230, 230, 0.4);
@@ -286,7 +286,7 @@
     width: 50%;
   }
 
-  .cardsMenu .cardMenu .card-menu-img a {
+  .cardsMenu .cardMenu .card-menu-img div {
     width: 70%;
     display: flex;
   }
@@ -391,7 +391,8 @@
   .cardsMenu .cardMenu {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 60%;
+    height: 60%;
     border: solid black 1px;
     margin-top: 2rem;
     color: rgb(133, 93, 93);
@@ -404,7 +405,7 @@
     width: 50%;
   }
 
-  .cardsMenu .cardMenu .card-menu-img a {
+  .cardsMenu .cardMenu .card-menu-img div {
     width: 60%;
     display: flex;
   }
