@@ -73,7 +73,7 @@ function Booking({ type }) {
       {RESET_SEARCH ? (
         <div className="big-container">
           <div className="bContainer">
-            <h1 className="bTitle"></h1>
+            {/* <h1 className="bTitle"> Search for a room</h1> */}
 
             <div className="bSearch">
               <div className="bSearchItem" id="date">

@@ -193,8 +193,8 @@
   justify-content: flex-end;
   width: 50%;
 }
-
-.r-cards .r-card .r-card-img a {
+/*  */
+.r-cards .r-card .r-card-img div {
   width: 60%;
   display: flex;
   overflow: hidden;
