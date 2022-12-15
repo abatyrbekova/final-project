@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 // Import css styling
 import "./home.css";
@@ -112,11 +113,11 @@ export default function Home() {
             NEA Hotel
             <span>the first glass igloo hotel in Germany</span>
           </h1>
-          <a href="http://localhost:3000/stay">
+          <Link to="/stay">
             <button className="learn-about-btn" type="button">
               Learn about the igloos
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="about-container">

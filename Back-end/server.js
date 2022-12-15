@@ -12,6 +12,14 @@ import orderRoutes from "./routes/orderRoutes.js";
 import configureJwtStrategy from "./passport-config.js";
 import hotelRoutes from "./routes/hotelRoutes.js";
 
+// Deployment (render.com)
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 // inside the backend u must create "images" folder and put inside it the all images, and then in the DB the url should be like this http://localhost:3001/img/flower.jpg
 dotenv.config();
 
@@ -46,6 +54,12 @@ app.use("/api/messages", messageRoutes);
 
 // pictures
 app.use("/img", express.static("./images"));
+
+// Deployment (render.com)
+app.use(express.static(path.join(__dirname, "../client/nea-hotel/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "../client/nea-hotel/build/index.html"));
+});
 
 app.listen(3001, (req, res) => {
   console.log("Server is running on port 3001");

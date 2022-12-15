@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "start": "node server",
+    "build": "npm install && cd ../client/nea-hotel && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
