@@ -61,6 +61,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "../client/nea-hotel/build/index.html"));
 });
 
-app.listen(3001, (req, res) => {
+app.listen(process.env.PORT || 3001, (req, res) => {
   console.log("Server is running on port 3001");
 });
