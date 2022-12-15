@@ -81,7 +81,7 @@ function Contact() {
           <label className="form-text" for="email_body">
             Message
           </label>
-          <textarea className="form-text" id="email_body" rows="5"></textarea>
+          <textarea type="text" name="Message"  className="form-text" id="email_body" rows="5"></textarea>
         </div>
 
         <button className="btn-submit" type="submit">
