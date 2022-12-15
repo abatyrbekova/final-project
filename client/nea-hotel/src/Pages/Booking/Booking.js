@@ -5,6 +5,9 @@ import { useContext, useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
+//react icons
+import { BsFillCalendarDateFill } from "react-icons/bs";
+import { BsFillPersonFill } from "react-icons/bs";
 
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -77,6 +80,8 @@ function Booking({ type }) {
 
             <div className="bSearch">
               <div className="bSearchItem" id="date">
+                <BsFillCalendarDateFill />
+
                 <span
                   onClick={() => setOpenDate(!openDate)}
                   className="bSearchText"
@@ -96,6 +101,7 @@ function Booking({ type }) {
                 )}
               </div>
               <div className="bSearchItem adults-children">
+                <BsFillPersonFill />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
                   className="bSearchText"
